@@ -1,0 +1,45 @@
+enable: true
+title: Que fait-on ?
+subtitle: >
+  Nous participons à différentes compétitions de robotique : la Toulouse Robot Race et la Coupe de France de Robotique, mais nous laissons aussi la place aux projets personnels. Venez avec vos idées et vos projets !
+content:
+
+  - icon: ion-settings
+    name: Mécanique
+    text: >
+      Nous réalisons nous même les robots, cela commence par toute la partie mécanique
+
+  - icon: ion-ios-bolt #ion-gear-b
+    name: Electronique
+    text: >
+      Les cartes électroniques du club sont faites maison, adaptées à un robot de Coupe de France
+
+  - icon: ion-code #ion-wifi
+    name: Programation
+    text: >
+      Nous utilisons aussi des Rasberry Pi avec ROS dans nos robots, il y a donc de quoi faire niveau code
+
+  - icon: ion-wifi
+    name: Réseaux sociaux
+    text: >
+      Suivez nous sur les réseaux sociaux
+
+  # - icon: ion-information
+  #   name: Logo Design
+  #   text: >
+  #     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+  #
+  # - icon: ion-ios-bolt
+  #   name: Development
+  #   text: >
+  #     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+  #
+  # - icon: ion-code
+  #   name: Brand Identity
+  #   text: >
+  #     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+  #
+  # - icon: ion-earth
+  #   name: Brand Identity
+  #   text: >
+  #     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut

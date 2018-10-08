@@ -1,0 +1,119 @@
+title = "7Robot"
+baseURL = "https://www.7robot.me"
+languageCode = "en-us"
+theme = "airspace-hugo"
+
+[menu]
+
+  [[menu.header]]
+    weight = 2
+    name = "Articles"
+    url = "/article"
+  [[menu.header]]
+    weight = 3
+    name = "Actualités"
+    url = "/actualites"
+  [[menu.header]]
+    weight = 4
+    name = "Nos activités"
+    url = "/activites"
+  [[menu.header]]
+    weight = 5
+    name = "Contact"
+    url = "/contact"
+
+  [[menu.footer]]
+    weight = 1
+    name = "Qui sommes-nous ?"
+    url = "#"
+  [[menu.footer]]
+    weight = 2
+    name = "Contactez-nous"
+    url = "/contact"
+#  [[menu.footer]]
+#    weight = 3
+#    name = "How it works"
+#    url = "#"
+  [[menu.footer]]
+    weight = 3
+    name = "Actualités"
+    url = "/actualites"
+#  [[menu.footer]]
+#    weight = 5
+#    name = "Terms"
+#    url = "#"
+
+# The site's parameters
+[params]
+
+  # If you want to remove the copyright text you need a Themefisher license.
+  # This license is offered with a 50% discount for all Hugo users.
+  # For information see https://github.com/gohugoio/hugoThemes/issues/260
+
+  #/!\ Never use tab in text !
+  #dateFormat = "1 Octobre 2018"
+
+  home = "Accueil"
+
+  # Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
+	iconFont = "font-awesome"
+    # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
+  socialIconStyle = "circle"
+
+  enableRobotsTXT = "true"
+# Add additional social link entries underneath
+  [social]
+    twitter  = "https://www.twitter.com/7robot_n7"
+    github   = "https://www.github.com/7Robot"
+    facebook = "https://www.facebook.com/7Robot/"
+    envelope = "mailto:7robot@bde.enseeiht.fr"
+    youtube = "https://www.youtube.com/channel/UCOTcSBDVzCKDfW-eP7js19Q"
+
+  [params.slider]
+    enable = true
+    title = "Le club de robotique de l'ENSEEIHT"
+    subtitle = "Roses are red.<br/>Tourne-vis are plats,<br/>Mécanique is approximative,<br/>And code is foireux."
+
+  [params.wrapper]
+    enable = true
+    title = "Qui sommes nous ?"
+    italic = "Le club de robotique de l'ENSEEIHT bien sûr !"
+    paragraph = "Nous sommes une association étudiante composée d’une équipe dynamique où toutes les filières de l’école se côtoient : Energie Electrique Electronique & Automatique, Sciences du Numérique et Mécanique des Fluides, Energétique & Environnement et tous les niveaux : étudiants, apprentis et doctorants. <br/>Tous les ans nous participons à la Coupe de France de Robotique, évènement qui réunit des centaines d’équipes de France et d’ailleurs."
+
+  [params.blog]
+    enable = true
+    title = "Get The Latest On What We're doing"
+    subtitle = "Catch up with us, anytime and anywhere"
+
+  [params.feature]
+    enable = true
+    title = "Que fait-on ?"
+    content = "La Coupe de France de robotiques est un gros morceau de notre activité mais nous laissons aussi la place à des projets personnels, des idées fun voire parfois un peu déjantées."
+    [params.feature.button]
+      caption = "Nos activités"
+      url = "/activites"
+
+  [params.call]
+    enable = true
+    title = "Venez nous dévouvrir !"
+    paragraph = "Vous pouvez en apprendre un peu plus sur nous grâce à ce site, contactez-nous avec la page dédiée <br/>ou venez nous voir à l'ENSEEIHT dans la fameuse Tour Radio (3ème étage)"
+
+#Regarder data/testimonials.yml pour les temoignages et tases de café
+
+  [params.contact]
+    enable = true
+    title = "Laissez-nous un message"
+    subtitle = ""
+    [params.contact.form]
+      name = "Votre nom"
+      email = "Votre email"
+      subject = "Objet"
+      message = "Votre message"
+      button = "Envoyer votre missive"
+    [params.contact.box]
+      title = "Nous contacter"
+      address = "2 rue Charles Camichel, 31 000 Toulouse"
+      email = "Email: 7robot@bde.enseeiht.fr"
+      phone = "Tel : +33 6 89 42 43 00"
+    [params.contact.gmaps]
+      title = "Où nous trouver"

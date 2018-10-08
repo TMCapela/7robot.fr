@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{ partial "head.html" . }}
+</head>
+<body>
+
+	{{ partial "header.html" . }}
+
+	<div class="post">
+	  <!-- Wrapper Start -->
+	  <section class="section" style="border: 1px dotted #ddd;">
+	    <div class="container">
+	      <div class="row">
+	        <div align="justify">
+	          <div class="block">
+							{{ with .Params.image }}<img src="{{ . | absURL }}" width="100%" alt="post-image"> {{ end }}
+	            <h1>{{ .Params.title }}</h1>
+	            <div class="post-info-wrapper">
+	              <p class="italic">Par <span class="bold">{{ .Params.author }}</span> le <span class="bold">{{ .Params.dater }}</span></p>
+	            </div>
+	            <hr />
+	            <p>{{ .Content | safeHTML }}</p>
+	          </div>
+	        </div><!-- .col-md-7 close -->
+	      </div>
+	    </div>
+	  </section>
+	</div>
+	<!-- <p class="center-text" style="padding: 30px;">
+	  <a class="btn btn-main" href="{{ $.Site.BaseURL }}/actualites">Retour aux actualités</a>
+	</p> -->
+
+	{{ if and (isset .Site.Params "call") (.Site.Params.call.enable) }}
+		{{ partial "call-to-action.html" . }}
+	{{ end }}
+
+	{{ partial "clients.html" . }}
+
+	{{ partial "social.html" . }}
+
+	{{ partial "footer.html" . }}
+
+</body>
+</html>

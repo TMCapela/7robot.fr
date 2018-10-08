@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{ partial "head.html" . }}
+</head>
+<body>
+
+	{{ partial "header.html" . }}
+
+	<section id="global-header">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-md-12">
+	                <div class="block">
+	                    <h1><b>Erreur 404<b/></h1>
+	                    <p>{{ .Params.subtitle }}</p>
+											<a href="/#" class="btn btn-main">Retour à l'accueil</a>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+
+
+	{{ partial "clients.html" . }}
+
+	{{ partial "social.html" . }}
+
+	{{ partial "footer.html" . }}
+
+
+</body>
+</html>
