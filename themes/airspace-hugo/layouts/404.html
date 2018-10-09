@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	{{ partial "head.html" . }}
+
+</head>
+<body>
+
+	{{ partial "header.html" . }}
+
+	{{ if and (isset .Site.Params "slider") (.Site.Params.slider.enable) }}
+		{{ partial "slider.html" . }}
+	{{ end }}
+
+	{{ if and (isset .Site.Params "wrapper") (.Site.Params.wrapper.enable) }}
+		{{ partial "wrapper.html" . }}
+	{{ end }}
+
+</body>
+</html>
