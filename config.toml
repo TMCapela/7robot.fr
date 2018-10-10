@@ -88,7 +88,7 @@ theme = "airspace-hugo"
   [params.feature]
     enable = true
     title = "Que fait-on ?"
-    content = "La Coupe de France de robotiques est un gros morceau de notre activité mais nous laissons aussi la place à des projets personnels, des idées fun voire parfois un peu déjantées."
+    content = "La Coupe de France de robotique est un gros morceau de notre activité mais nous laissons aussi la place à des projets personnels, des idées funs voire parfois un peu déjantées."
     [params.feature.button]
       caption = "Nos activités"
       url = "/activites"
@@ -109,7 +109,7 @@ theme = "airspace-hugo"
       email = "Votre email"
       subject = "Objet"
       message = "Votre message"
-      button = "Envoyer votre missive"
+      button = "Envoyez votre missive"
     [params.contact.box]
       title = "Nous contacter"
       address = "2 rue Charles Camichel, 31 000 Toulouse"
