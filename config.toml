@@ -1,6 +1,6 @@
 title = "7Robot"
 baseURL = "https://www.7robot.me"
-languageCode = "en-us"
+languageCode = "fr"
 theme = "airspace-hugo"
 
 [menu]
@@ -30,12 +30,12 @@ theme = "airspace-hugo"
     weight = 2
     name = "Contactez-nous"
     url = "/contact"
-#  [[menu.footer]]
-#    weight = 3
-#    name = "How it works"
-#    url = "#"
+ [[menu.footer]]
+   weight = 3
+   name = "Articles"
+   url = "/article"
   [[menu.footer]]
-    weight = 3
+    weight = 4
     name = "Actualités"
     url = "/actualites"
 #  [[menu.footer]]
@@ -114,6 +114,6 @@ theme = "airspace-hugo"
       title = "Nous contacter"
       address = "2 rue Charles Camichel, 31 000 Toulouse"
       email = "Email: 7robot@bde.enseeiht.fr"
-      phone = "Tel : +33 6 89 42 43 00"
+      # phone = ""
     [params.contact.gmaps]
-      title = "Où nous trouver"
+      title = "Où nous trouver ?"
