@@ -7,5 +7,3 @@ author = "Tony"
 ## Bidule
 
 Blabla bla
-je rajoute du blabla pour parler plus
-j'ai plus d'idee
