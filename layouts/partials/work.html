@@ -8,10 +8,14 @@
             <div class="block">
               <div class="portfolio-menu">
                 <ul>
-                    <li class="filter" data-filter="all">Everything</li>
+                    <li class="filter" data-filter="all">Tout</li>
+                  <!--
                   {{ range .Site.Data.work.portfolio }}
                     <li class="filter" data-filter=".{{ .category }}">{{ .category }}</li>
-                  {{ end }}
+                  {{ end }} -->
+              <li class="filter" data-filter=".Mécanique">Mécanique</li>
+              <li class="filter" data-filter=".Electronique">Electronique</li>
+              <li class="filter" data-filter=".Informatique">Informatique</li>
                 </ul>
               </div>
               <div class="portfolio-contant">

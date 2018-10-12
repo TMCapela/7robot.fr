@@ -1,0 +1,76 @@
++++
+title = " FriendlyARM Mini6410"
+dater = "26 Octobre 2011"
+author = "Elie"
++++
+
+<h2>
+	1. Overview</h2>
+<p>
+	La FriendlyARM Mini6410, commun&eacute;ment appel&eacute; la &laquo; carte ARM &raquo;, est en r&eacute;alit&eacute; un v&eacute;ritable ordinateur miniaturis&eacute;. Fabriqu&eacute; par <a href="http://www.friendlyarm.net/">FriendlyARM</a>, elle poss&egrave;de des dimensions r&eacute;duites (11cm &times; 11cm) id&eacute;ales pour la placer dans notre robot. De plus, en tant qu&#39;ordinateur, il est possible d&#39;installer un syst&egrave;me d&#39;exploitation tel que linux et ainsi b&eacute;nificier des outils bien commodes qu&#39;il embarque. Par exemple, il est alors possible de s&#39;y connecter &agrave; distance en ssh par un c&acirc;ble ethernet ou un dongle wifi, et ainsi surveiller nos programme, g&eacute;n&eacute;rer des logs, commander manuellement le robot, &hellip; Cela ouvre &eacute;galement la possibilit&eacute; d&#39;utilis&eacute; des biblioth&egrave;ques pr&eacute;-existante, et ainsi b&eacute;nificier de fonctions avanc&eacute;es telles que la reconnaissance d&#39;image &agrave; partir d&#39;une webcam. Un autre avantage est bien &eacute;videment une puissance de calcul bien sup&eacute;rieur &agrave; celle d&#39;un PIC.</p>
+<p>
+	Bien que similaire en de nombreux points &agrave; un ordinateur, la &laquo; carte ARM &raquo; poss&egrave;de une diff&eacute;rence notable : il s&#39;agit de son processeur. Comme vous le savez sans doute d&eacute;j&agrave;, il s&#39;agit du c&oelig;ur de l&#39;ordinateur, en charge d&#39;effectuer les calculs que le syst&egrave;me d&#39;exploitation lui demande d&#39;effectuer. Pour cela, chaque type de processeur poss&egrave;de un &laquo; jeu d&#39;instructions &raquo;, c&#39;est-&agrave;-dire une liste de fonctions, tel que l&#39;adition ou la multiplication, dont le syst&egrave;me d&#39;exploitation peut faire usage. Usuellement, les processeurs de nos ordinateur supporte le jeu d&#39;instructions &laquo; i386 &raquo;, voir &laquo; x86_64 &raquo; pour ceux qui sont en &laquo; 64 bits &raquo;. Or la &laquo; carte ARM &raquo; n&#39;est pas munit d&#39;un processeur habituel, mais d&#39;un processeur &laquo; ARM &raquo;, qui poss&egrave;de un jeu d&#39;instructions diff&eacute;rent propre &agrave; lui m&ecirc;me.</p>
+<p>
+	Les processeurs ARM ont un jeu d&#39;instructions simplifi&eacute; et ont une faible consommation, ce qui est un gros avantage pour les syst&egrave;mes enbarqu&eacute;s tel que notre robot. Cela explique leur pr&eacute;pond&eacute;rance dans ce domaine. Dans la pratique, cela demande l&#39;utilisation d&#39;un syst&egrave;me d&#39;exploitation et de programmes qui ont &eacute;t&eacute; compil&eacute;s pour utiliser les instructions du processeurs en question, ce qui complique un peu la t&acirc;che.</p>
+<p>
+	La FriendlyARM Mini6410 est &eacute;quip&eacute; d&#39;un processeur arm1176jzf-s, cadenc&eacute; &agrave; 533MHz, qui poss&egrave;de sont propre jeu d&#39;instructions (et oui, il existe diff&eacute;rente variante de l&#39;architecture arm, non comptatible entre elle). Elle poss&egrave;de &eacute;galement 256Mio de RAM et une m&eacute;moire NAND de 1Gio (qui fait office de disque dure). Du cot&eacute; des entr&eacute;es/sorties, elle poss&egrave;de un port USB, un slot pour carte SD, une sortie RS232 et trois sorties UART (liaison s&eacute;rie), un port GPIO (liaison parall&egrave;le), une sortie ethernet RJ45, une sortie son jack 3.5mm (st&eacute;r&eacute;o !) et une sortie TV. Il y a &eacute;galement moyen de s&#39;amuser au moyen de 8 boutons et 4 leds. Voil&agrave; pour l&#39;essentiel, pour les d&eacute;tails, vous pouvez <a href="http://www.friendlyarm.net/downloads">t&eacute;l&eacute;charger la documentation</a> de FriendlyARM sur son site (nottament &laquo; <a href="http://www.friendlyarm.net/dl.php?file=mini6410_manual.zip">Mini6410 Manual</a> &raquo; et &laquo; <a href="http://www.friendlyarm.net/dl.php?file=mini6410_overview.pdf">Mini6410 Hardware Overview</a> &raquo;, ce dernier contenant la documentation technique de la carte m&egrave;re et son mat&eacute;riel).</p>
+<h2>
+	2. Getting started</h2>
+<h3>
+	2.1. Alimentation</h3>
+<p>
+	La carte ARM n&eacute;cessite une alimentation 5V. Le transformateur qui lui est d&eacute;di&eacute; poss&egrave;de une prise &eacute;trang&egrave;re. Il est dont &eacute;galement n&eacute;cessaire de se procurrer l&#39;adaptateur. Merci de garder ces diff&eacute;rents &eacute;l&eacute;ments r&eacute;unis.</p>
+<h3>
+	2.2. D&eacute;marrage</h3>
+<p>
+	La mini6410 a deux possibilit&eacute; pour d&eacute;marrer : soit sur la m&eacute;moire NAND de 1Gio int&eacute;gr&eacute; &agrave; la carte, soit sur une carte SD (haute-capacit&eacute; support&eacute;). Le switch situ&eacute; sur la gauche de la carte sert &agrave; selectionn&eacute; le support sur lequel la carte d&eacute;marrera.</p>
+<h4>
+	2.2.1. Boot NAND</h4>
+<p>
+	En sortie d&#39;usine, la NAND contient un syst&egrave;me linux pr&egrave;s &agrave; l&#39;emploit, nom&eacute; &laquo; Qtopia &raquo;. Il a &eacute;t&eacute; modifi&eacute; par FriendlyARM pour, premi&egrave;rement, support&eacute; le mat&eacute;riels de la carte bien &eacute;videment, et secondement, ajouter des utilitaire de teste bien pratique que vous trouverez dans l&#39;onglet &laquo; FriendlyARM &raquo;. Pour plus d&#39;information sur ce syst&egrave;me, se repporter au fichier &laquo; Mini6410 Linux.pdf &raquo;. Bien qu&#39;il soit possible de remplacer le syst&egrave;me pr&eacute;sent dans la NAND, il est actuellement recommand&eacute; de ne pas y toucher afin d&#39;avoir en cas de soucis un syst&egrave;me d&#39;exploitation utilisable de secours. De plus, cette m&eacute;moire poss&egrave;de un nombre de cycle d&#39;&eacute;criture limit&eacute;. Il pourra &eacute;ventuellement &ecirc;tre envisag&eacute; de flasher la NAND lorsqu&#39;un syst&egrave;me stable aura &eacute;t&eacute; obtenue. Dans ce cas, le syst&egrave;me de fichier devrait tous de m&ecirc;me rester pr&eacute;f&eacute;rentiellement sur la carte SD pour &eacute;conomiser les cycles d&#39;&eacute;criture.</p>
+<h4>
+	2.2.2. Boot SD</h4>
+<p>
+	Ce boot est &agrave; privil&eacute;gier afin de ne pas flasher la NAND, et ainsi &eacute;conomiser les cycles d&#39;&eacute;criture de celle-ci. Voici dont les &eacute;tapes &agrave; suivre pour d&eacute;marrer la mini6410 sur une carte SD.</p>
+<p>
+	Tous d&#39;abord, il vous faut proc&eacute;der &agrave; une pr&eacute;paration sp&eacute;ciale de la carte SD pour que l&#39;arm puisse&nbsp; booter dessus. Pour cela, il faut utiliser l&#39;outil <a href="http://www.friendlyarm.net/dl.php?file=sd-flasher.zip">SD-Flasher</a> propos&eacute; par FriendlyARM. Celui-ci ne fonctionne que sur windows, qu&#39;avec des lecteurs de carte SD externe que l&#39;on branche par USB, et encore c&#39;est pas s&ucirc;r. Personnellement, j&#39;ai r&eacute;ussit &agrave; l&#39;utiliser sous windows XP SP3, mais sans succ&egrave;s avec le windows 7 install&eacute; sur Marvin, le pc du club. Il vous faudra &eacute;galement un bootloader tel que u-boot que vous pouvez compiler vous m&ecirc;me, ou t&eacute;l&eacute;chargr d&eacute;j&agrave; compiler sur le site de FriendlyARM. Pour r&eacute;duire les risques de probl&egrave;me, il est pr&eacute;f&eacute;rable d&#39;utiliser <a href="http://www.friendlyarm.net/dl.php?file=supervivi_20100818.zip">supervivi</a> qui a &eacute;t&eacute; cod&eacute; par FriendlyARM sp&eacute;cifiquement pour leurs cartes. L&#39;utilisation du logiciel SD-Flasher est simple, mais vous pouvez tous de m&ecirc;me en cas de besoin vous repporter au fichier &laquo; Mini6410 For Dummies.pdf &raquo; qui d&eacute;tail la proc&eacute;dure.</p>
+<p>
+	Vous pouvez d&#39;ors et d&eacute;j&agrave; tester le fruit de votre travail. Introduisez la carte SD dans le lecteur de l&#39;ARM, et mettez le en marche. L&#39;affichage affiche alors des couleurs &eacute;tranges cramoisies. Si cet affichage persiste, votre carte SD n&#39;a pas correctement &eacute;t&eacute; flash&eacute;. En revanche, si celui devient noir (dans un d&eacute;lair d&#39;environ une seconde apr&egrave;s l&#39;allumage habituellement), c&#39;est que l&#39;ARM a bien booter sur la carte SD mais qu&#39;aucun syst&egrave;me n&#39;a pu &ecirc;tre lanc&eacute; (normal, nous n&#39;en avons pas encore install&eacute; !).</p>
+<p>
+	Ensuite, il vous faut un noyau linux, ainsi qu&#39;un syst&egrave;me de fichier. Avant d&#39;apprendre &agrave; r&eacute;aliser votre propre syst&egrave;me, ce qui constitue la suite de se tutoriel, il est raisonnable de commencer par utilis&eacute; un syst&egrave;me d&eacute;j&agrave; compil&eacute; et configur&eacute; pour la mini6410. Nous prendrons en exemple une version de <a href="http://www.friendlyarm.net/dl.php?file=arm-qte-4.6.3_20100802.tgz">Qt Embedded</a> propos&eacute; par FriendlyARM. L&#39;archive que vous avez t&eacute;l&eacute;charg&eacute; contient &hellip;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	Avant d&#39;apprendre &agrave; r&eacute;aliser votre propre syst&egrave;me, ce qui constitue la suite de se tutoriel, vous pouvez essayer d&#39;utiliser un syst&egrave;me pr&eacute;-configurer propos&eacute; par FriendlyARM sur sa page de <a href="http://www.friendlyarm.net/downloads">t&eacute;l&eacute;chargements</a>. Nottament <a href="http://www.friendlyarm.net/dl.php?file=arm-qte-4.6.3_20100802.tgz">Qt Embedded</a>, nouveau nom de Qtopia, qui n&#39;est qu&#39;une nouvelle version du syst&egrave;me pr&eacute;sent sur la NAND. Vous pourrez &eacute;galement essayer le tr&egrave;s c&eacute;l&egrave;bre <a href="http://www.friendlyarm.net/dl.php?file=android-kernel_20090825.tgz">Android</a>, avant de vite constater qu&#39;il n&#39;est vraiment pas adapt&eacute; pour notre robot.</p>
+<p>
+	[Il faudrait (lorsque j&#39;aurai du d&eacute;bit, l&agrave; la flemme) t&eacute;l&eacute;charger ce que propose FriendlyARM pour d&eacute;tailler les syst&egrave;mes propos&eacute;s]</p>
+<p>
+	[c&#39;est peut-&ecirc;tre pas le moment de parler des diff&eacute;rents syst&egrave;me propos&eacute;, il faudrait plut&ocirc;t en parl&eacute; apr&egrave;s en avoir fait booter au moins un !]</p>
+<p>
+	Maintenant que vous avez r&eacute;cup&eacute;rer</p>
+<p>
+	D&eacute;tail FriendlyARM.ini et tous le tsoin tsoin &hellip;</p>
+<p>
+	Noyau fournit par FriendlyARM <a href="http://www.friendlyarm.net/dl.php?file=arm-qte-4.6.3_20100802.tgz">ARM-Qt Embedded 4.6.3 2010-08-02</a></p>
+<p>
+	Cha&icirc;ne de compilation crois&eacute; fournit par ARM <span><a href="http://www.friendlyarm.net/dl.php?file=arm-linux-gcc-4.4.3.tgz">ARM-Linux GCC 4.4.3</a> </span>(only host i386)</p>
+<p>
+	Cha&icirc;nes fournit par <a href="http://mini2440.netyxia.net/viewtopic.php?f=9&amp;t=13">mini2440.netyxia.net</a>, mini2440/mini6410, i386/x886_64</p>
+<p>
+	Mon exemple en C (git)</p>
+<p>
+	Utilisation framebuffer : linux/fb.h, mmap</p>
+<p>
+	&Eacute;criture de caract&egrave;re : utilisation <a href="http://www.freetype.org/index2.html">freetype</a> (bonne doc, ne pas h&eacute;siter &agrave; la consulter : <a href="http://www.freetype.org/freetype2/documentation.html">Documentation</a>)</p>
+<p>
+	Utilisation du touchscreen : <a href="http://tslib.berlios.de/">tslib</a> (pas de doc, mais des programmes qui peuvent servir d&#39;exemples)</p>
+<p>
+	Mon exemple en C++</p>
+<p>
+	Compiler le noyau : avec la cha&icirc;ne de FriendlyARM, avec <a href="http://www.friendlyarm.net/dl.php?file=linux-2.6.32.2-mini2440_20110413.tgz">leur sources</a></p>
+<p>
+	Compiler le noyau : <a href="http://buildroot.uclibc.org/">buildroot</a> et ma config qui marche (a bon ?) (defconfig mini2440 modifi&eacute;)</p>
+<p>
+	&nbsp;</p>

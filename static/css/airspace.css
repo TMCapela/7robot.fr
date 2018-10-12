@@ -792,6 +792,14 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 .blog-post p{
   margin: 15px 0 20px;
+  line-height: 200%;
+  position: relative;
+  display: inline-block;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 8.0em;
+  /* line-height: 1.2em; */
+  text-align:justify;
 }
 
 .post-title{
