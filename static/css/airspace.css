@@ -535,8 +535,9 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #655E7A;
 }
 #portfolio-work .block .portfolio-contant ul img {
-  width: 100%;
-  height: auto;
+  width: 350px;
+  height: 220px;
+  object-fit: contain;
 }
 #portfolio-work .block .portfolio-contant .overly {
   position: absolute;
