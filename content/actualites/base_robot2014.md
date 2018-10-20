@@ -3,6 +3,7 @@ title = "La base du robot principal roule !"
 dater = "11 Mars 2014"
 author = "Pizz"
 weight = 17
+image = "/img/articles/Selection_003.png"
 +++
 
 <p>

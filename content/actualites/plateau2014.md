@@ -3,6 +3,7 @@ title = "Plateau 2014"
 dater = "03 Octobre 2013"
 author = "Pizz"
 weight = 14
+image = "/img/articles/mammouth.jpg"
 +++
 
 <p>

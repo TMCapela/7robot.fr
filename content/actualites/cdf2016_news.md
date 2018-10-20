@@ -3,6 +3,7 @@ title = "Coupe de France De Robotique 2015/2016"
 dater = "29 Septembre 2015"
 author = "Amandine"
 weight = 21
+image = "/img/articles/plateau(1).PNG"
 +++
 
 <h2>

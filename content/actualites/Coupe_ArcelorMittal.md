@@ -3,6 +3,7 @@ title = "Coupe ArcelorMittal"
 dater = "14 Mai 2011"
 author = "Romain"
 weight = 2
+image = "/img/articles/DSCN1119.JPG"
 +++
 
 <p align="justify">

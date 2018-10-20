@@ -3,6 +3,7 @@ title = "Notre local"
 dater = "26 Juillet 2011"
 author = "7robot"
 weight = 4
+images = "/img/articles/local.jpg"
 +++
 
 <p>

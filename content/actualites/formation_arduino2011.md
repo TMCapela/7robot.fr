@@ -3,6 +3,7 @@ title = "Bilan de la formation Arduino 2011"
 dater = "7 Octobre 2011"
 author = "Martin"
 weight = 6
+image = "/img/articles/DSC00001.JPG"
 +++
 
 <p>

@@ -15,10 +15,12 @@
 				{{ range .Pages.ByDate.Reverse }}
 				<div class="col-md-6">
 					<article class="blog-post">
-						{{ with .Params.image }}
-						<img src="{{ . | absURL }}" class="img-responsive" alt="post-thumb"> {{ end }}
+
 						<a class="post-title" href="{{ .Permalink }}">{{ .Title | safeHTML }}</a>
+
 						<p>
+							{{ with .Params.image }}
+							<img src="{{ . | absURL }}" class="img-responsive" alt="post-thumb" style="float:left;margin:0px 15px 0px 0px"/> {{ end }}
 							{{ .Summary | safeHTML }}
 						</p>
 						<a href="{{ .Permalink }}" class="btn btn-main">Lire la suite</a>

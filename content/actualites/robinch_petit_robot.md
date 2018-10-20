@@ -3,6 +3,7 @@ title = "Robinch (petit robot)"
 dater = "23 Février 2014"
 author = "Pizz"
 weight = 16
+image = "/img/articles/IMG_20140220_182133.jpg"
 +++
 
 <p>

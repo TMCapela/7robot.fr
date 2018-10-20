@@ -1,8 +1,9 @@
 +++
-title = "Coupe de France 2017 - Modèles 3D Décembre"
+title = "Coupe de France 2017 - Modèles 3D"
 dater = "13 Décembre 2016"
 author = "7Robot"
 weight = 26
+image = "/img/articles/Gros robot 2017.JPG"
 +++
 
 <p>

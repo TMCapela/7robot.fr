@@ -3,6 +3,7 @@ title = "Les Robots débarquent à Paul Sab"
 dater = "15 Octobre 2011"
 author = "Antoine"
 weight = 7
+image = "/img/articles/IMGP2765.JPG"
 +++
 
 <p>

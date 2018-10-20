@@ -3,6 +3,7 @@ title = "Moon village : avancement début mars"
 dater = "04 Mars 2017"
 author = "7Robot"
 weight = 27
+image = "/img/articles/17155246_1484220058278410_6947234366855835388_n.jpg"
 +++
 
 <p>

@@ -3,6 +3,7 @@ title = "News Freescale"
 dater = "23 Février 2014"
 author = "Pizz"
 weight = 15
+image = "/img/articles/IMG_20140128_135550.jpg"
 +++
 
 <p>

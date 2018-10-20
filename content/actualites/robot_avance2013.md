@@ -3,6 +3,7 @@ title = "Le robot avance"
 dater = "04 Avril 2013"
 author = "Guillaume"
 weight = 12
+image = "/img/articles/IMAG0463.jpg"
 +++
 
 <p>

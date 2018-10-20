@@ -3,6 +3,7 @@ title = "Le projet drone progresse !"
 dater = "12 Septembre 2015"
 author = "Amandine"
 weight = 20
+image = "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/1/image/660x415/17f82f742ffe127f42dca9de82fb58b1/legacy/catalog/walrus-sub1.jpg"
 +++
 
 <h2>

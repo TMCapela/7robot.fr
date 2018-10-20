@@ -3,6 +3,7 @@ title = "Petit-Déjeuner ft. Elsys Design"
 dater = "21 Mars 2016"
 author = "7Robot"
 weight = 22
+image = "/img/articles/Sans titre.png"
 +++
 
 <p>

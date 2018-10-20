@@ -12,7 +12,7 @@ author = "Martin"
 	<p>
 		Datasheet :</p>
 	<p>
-		<a href="http://www.bde.enseeiht.fr/clubs/robot/files/AX-12A.pdf">http://www.bde.enseeiht.fr/clubs/robot/files/AX-12A.pdf</a></p>
+		<a href="/img/AX-12A.pdf">AX-12A.pdf</a></p>
 	<p>
 		Biblioth&egrave;que&nbsp;&agrave; mettre dans un dossier&nbsp;<em>libraries</em>&nbsp;dans votre <em>Sketchbook</em>&nbsp;:</p>
 	<p>

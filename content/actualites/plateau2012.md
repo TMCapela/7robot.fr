@@ -3,6 +3,7 @@ title = "Le plateau 2012 est prêt !"
 dater = "19 Novembre 2011"
 author = "Maxime"
 weight = 8
+image = "/img/articles/plateau12.jpg"
 +++
 
 <p>

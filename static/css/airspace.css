@@ -789,7 +789,9 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 .blog-post img{
-  margin-bottom: 15px;
+  width: auto;
+  height: 8.0em;
+  margin-bottom: 5px;
 }
 .blog-post p{
   margin: 15px 0 20px;
@@ -798,7 +800,7 @@ font header .navbar-default .navbar-nav li a:hover {
   display: inline-block;
   word-wrap: break-word;
   overflow: hidden;
-  max-height: 8.0em;
+  height: 8.0em;
   /* line-height: 1.2em; */
   text-align:justify;
 }

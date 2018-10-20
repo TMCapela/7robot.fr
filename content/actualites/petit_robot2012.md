@@ -3,6 +3,7 @@ title = "Le petit robot est né"
 dater = "15 Décembre 2011"
 author = "Maxime"
 weight = 9
+image = "/img/articles/petitRobot12.png"
 +++
 
 <p>

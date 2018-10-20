@@ -72,7 +72,7 @@ theme = "airspace-hugo"
   [params.slider]
     enable = true
     title = "Le club de robotique de l'ENSEEIHT"
-    subtitle = "Roses are red.<br/>Tourne-vis are plats,<br/>Mécanique is approximative,<br/>And code is foireux."
+    subtitle = "Roses are red.<br/>Tourne-vis are plats,<br/>Mécanique is approximative,<br/>And code is audacieux."
 
   [params.wrapper]
     enable = true
