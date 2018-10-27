@@ -1,0 +1,103 @@
+enable: true
+content:
+
+# template
+  # - title :
+  #   image: "/img/memes/"
+  #   author: Miguel
+
+  - title : MaNeTtE starter pack !
+    image: "/img/memes/manette.png"
+    author: Alex
+
+  - title : Le moteur a cramé !
+    image: "/img/memes/antho et le moteur.jpg"
+    author: Miguel
+
+  - title : La grande aventure de l'imprimante 3d
+    image: "/img/memes/3d printer.jpg"
+    author: Miguel
+
+  - title : Un peu de rangement
+    image: "/img/memes/boite d_ecrou.jpg"
+    author: Miguel
+
+  - title : Ecrous et Cie
+    image: "/img/memes/ecrou.jpg"
+    author: Miguel
+
+  - title : Fox7
+    image: "/img/memes/fox7.jpg"
+    author: Miguel
+
+  - title : Un maxon dans la nature, si vous le retrouvez contactez-nous
+    image: "/img/memes/maxon gone.jpg"
+    author: Miguel
+
+  - title : Pavaaard
+    image: "/img/memes/pavard.jpg"
+    author: Miguel
+
+  - title : Petit robot 2018
+    image: "/img/memes/petit robot.jpg"
+    author: Miguel
+
+  - title : Manette de XBox
+    image: "/img/memes/scotch.jpg"
+    author: Miguel
+
+  - title : Subventions
+    image: "/img/memes/subventions.jpg"
+    author: Miguel
+
+  - title : Expectation Vs Reality
+    image: "/img/memes/sw.jpg"
+    author: Miguel
+
+  - title : Scotch électrique !
+    image: "/img/memes/manette2.jpg"
+    author: Anthony
+
+  - title : FILLE
+    image: "/img/memes/meuf.jpg"
+    author: Miguel
+
+  - title : After TRR
+    image: "/img/memes/moteur.jpg"
+    author: Anthony
+
+  - title : Nutshell
+    image: "/img/memes/nutshell.jpg"
+    author: Miguel
+
+  - title : Panneau domotique cancer
+    image: "/img/memes/pano_domo.png"
+    author: Miguel
+
+  - title : Panneau domotique cancer
+    image: "/img/memes/pano_domo2.png"
+    author: Miguel
+
+  - title : Panneau domotique cancer
+    image: "/img/memes/pano_domo3.jpg"
+    author: Anthony
+
+  - title : Panneau domotique cancer
+    image: "/img/memes/pano_domo4.jpg"
+    author: Anthony
+
+  - title : Panneau domotique cancer
+    image: "/img/memes/pano_domo5.png"
+    author: Miguel
+
+  - title : Panneau domotique cancer
+    image: "/img/memes/pano_domo6.png"
+    author: Miguel
+
+  - title : Robot7
+    image: "/img/memes/robot7_bis.jpg"
+    author: Miguel
+
+  - title : Robot7 trigger
+    image: "/img/memes/robot7_encore.jpg"
+    author: Anthony

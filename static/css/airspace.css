@@ -219,6 +219,30 @@ font header .navbar-default .navbar-nav li a:hover {
   line-height: 1.8;
 }
 /*--
+	meme7 Start
+--*/
+#meme7 {
+  text-align: center;
+  padding: 20px 0;
+}
+#meme7 .meme7-item {
+  padding-bottom: 30px;
+}
+#meme7 .meme7-item img {
+  width: 500px;
+  height: auto ;
+}
+#meme7 .meme7-item h4 {
+  color: #000;
+  font-size: 25px;
+  font-weight: 500;
+}
+#meme7 .meme7-item p {
+  color: #888;
+  font-size: 14px;
+  line-height: 1.8;
+}
+/*--
 	call-to-action Start
 --*/
 #call-to-action {
@@ -417,7 +441,7 @@ font header .navbar-default .navbar-nav li a:hover {
   text-align: center;
 }
 #global-header .block h1 {
-  font-weight: 100;
+  font-weight: 300;
   font-size: 45px;
   letter-spacing: 6px;
   padding-bottom: 15px;
@@ -666,7 +690,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #slider-contact .block h1 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 45px;
   line-height: 60px;
   letter-spacing: 6px;

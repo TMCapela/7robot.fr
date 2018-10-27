@@ -1,0 +1,32 @@
+	<section id="global-header">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-md-12">
+	                <div class="block">
+	                    <h1>Meme7</h1>
+	                    <p>{{ .Params.subtitle }}</p>
+											<a href="/memesubmit" class="btn btn-main">Soumettez vos memes</a>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+
+<!-- Service Start -->
+<section id="meme7">
+  <div class="container">
+
+    <!-- Content -->
+    <div class="row">
+      {{ range .Site.Data.meme7.content }}
+      <div class="center-block">
+        <div class="meme7-item">
+          <h4>{{ .title }}</h4>
+          <img src="{{ .image }}"><img/>
+          <p>de {{ .author }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

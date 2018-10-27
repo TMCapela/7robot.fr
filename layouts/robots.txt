@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /articles/
+Disallow: /meme7/
+Disallow: /memesubmit/

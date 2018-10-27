@@ -1,0 +1,35 @@
+{{ partial "global-header.html" . }}
+
+<!-- contact form start -->
+{{ with .Site.Params.contact }}
+<section id="contact-form">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <h2>Laisse-nous des memes</h2>
+        <div class="block">
+          <form method="POST" action="https://formspree.io/tony.m.capela@gmail.com">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control" placeholder="Ton nom">
+            </div>
+            <div class="form-group">
+              <input type="text" name="_replyto" class="form-control" placeholder="Ton mail">
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" class="form-control" placeholder="Le titre">
+            </div>
+            <div class="form-group-2">
+              <input type="hidden" role="uploadcare-uploader" name="my_file" />
+            </div>
+            <button class="btn btn-default" type="submit">Balance ton meme</button>
+            <input type="hidden" name="_next" value="/meme7" />
+            <input type="hidden" name="_language" value="fr" />
+            <input type="text" name="_gotcha" style="display:none" />
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+{{ end }}
