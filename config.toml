@@ -1,5 +1,5 @@
 title = "7Robot"
-baseURL = "https://www.7robot.me"
+baseURL = "https://7robot.me"
 languageCode = "fr"
 theme = "airspace-hugo"
 
