@@ -30,6 +30,6 @@ weight = 11
 <p>
 	Bonne ann&eacute;e &agrave; tous.</p>
 <p>
-	<img src="/img/articles/Sopra.jpg" width="200"/>&nbsp;&nbsp;<img src="/img/articles/elsysd_logo.png" width="200"/>&nbsp;&nbsp;<img src="/img/articles/Sick_SensorIntelligence_4c.jpg" width="200" />&nbsp;&nbsp;<img src="/img/articles/logo_vicatronic.jpg" width="200"/></p>
+	<img src="/clubs/robot/img/articles/Sopra.jpg" width="200"/>&nbsp;&nbsp;<img src="/clubs/robot/img/articles/elsysd_logo.png" width="200"/>&nbsp;&nbsp;<img src="/clubs/robot/img/articles/Sick_SensorIntelligence_4c.jpg" width="200" />&nbsp;&nbsp;<img src="/clubs/robot/img/articles/logo_vicatronic.jpg" width="200"/></p>
 <p>
-	<img src="/img/articles/festo.jpg" width="200"/>&nbsp;&nbsp;<img src="/img/articles/Vink_logo.jpg" width="200"/></p>
+	<img src="/clubs/robot/img/articles/festo.jpg" width="200"/>&nbsp;&nbsp;<img src="/clubs/robot/img/articles/Vink_logo.jpg" width="200"/></p>

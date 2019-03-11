@@ -3,7 +3,7 @@ title = "Coupe de France De Robotique 2015/2016"
 dater = "29 Septembre 2015"
 author = "Amandine"
 weight = 21
-image = "/img/articles/plateau(1).PNG"
+image = "/clubs/robot/img/articles/plateau(1).PNG"
 +++
 
 <h2>
@@ -17,7 +17,7 @@ image = "/img/articles/plateau(1).PNG"
 <p>
 	Voici quelques images du plateau tir&eacute;es du r&egrave;glement avec des explications claires :</p>
 <p>
-	<img src="/img/articles/plateau(1).PNG" /></p>
+	<img src="/clubs/robot/img/articles/plateau(1).PNG" /></p>
 <p>
 	&nbsp;</p>
 <h2>
@@ -27,7 +27,7 @@ image = "/img/articles/plateau(1).PNG"
 <p>
 	&nbsp;</p>
 <p>
-	<img src="/img/articles/plateau(2)(1).PNG" /></p>
+	<img src="/clubs/robot/img/articles/plateau(2)(1).PNG" /></p>
 <p>
 	&nbsp;</p>
 <p>
@@ -35,9 +35,9 @@ image = "/img/articles/plateau(1).PNG"
 <p>
 	&nbsp;</p>
 <p>
-	<img src="/img/articles/plateau(3).PNG" /></p>
+	<img src="/clubs/robot/img/articles/plateau(3).PNG" /></p>
 <p>
-	<img src="/img/articles/plateau(4).PNG" /></p>
+	<img src="/clubs/robot/img/articles/plateau(4).PNG" /></p>
 <p>
 	&nbsp;</p>
 <h2>
@@ -49,7 +49,7 @@ image = "/img/articles/plateau(1).PNG"
 <p>
 	Ensuite, nous allons comme l&#39;an dernier devoir rabattre des &quot;clapets&quot; sous forme de cabanon, et lorsque le cabanon se fermera, un petit drapeau s&#39;&eacute;l&egrave;vera en haut. De quoi rendre le mouvement appr&eacute;ciable !</p>
 <p>
-	<img src="/img/articles/plateau(5).PNG" /></p>
+	<img src="/clubs/robot/img/articles/plateau(5).PNG" /></p>
 <p>
 	Et bien s&ucirc;r, les participants pourront suivre la ligne noire, &agrave; leurs risques et p&eacute;rils ;)</p>
 <h2>
@@ -57,7 +57,7 @@ image = "/img/articles/plateau(1).PNG"
 <p>
 	Ensuite, et la t&acirc;che la plus difficile : ramasser les poissons qui nagent dans l&#39;eau.&nbsp;</p>
 <p>
-	<img src="/img/articles/plateau(6).PNG" /></p>
+	<img src="/clubs/robot/img/articles/plateau(6).PNG" /></p>
 <p>
 	&nbsp;</p>
 <h2>

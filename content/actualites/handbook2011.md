@@ -19,6 +19,6 @@ weight = 4
 	<li>
 		Des extraits de datasheet.</li>
 </ul>
-<h3><a href="/img/articles/POLY_7ROBOT_utf8.pdf"><br />
+<h3><a href="/clubs/robot/img/articles/POLY_7ROBOT_utf8.pdf"><br />
 	T&eacute;l&eacute;charger le HandBook Beta (pdf)</a></h3><br />
 	<p><em>ISPQ : Une version finale et compl&egrave;te sera disponible en septembre</em><p/>

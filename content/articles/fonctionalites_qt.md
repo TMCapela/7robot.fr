@@ -48,7 +48,7 @@ author = "Jeremie"
 <p>
 	Qwt donne les outils necessaires &agrave; Qt pour tracer des coubes de mani&egrave;re statique.</p>
 <p>
-	<img src="/img/articles/qwt_sinus.png" /></p>
+	<img src="/clubs/robot/img/articles/qwt_sinus.png" /></p>
 <p>
 	&nbsp;</p>
 <p>
@@ -56,9 +56,9 @@ author = "Jeremie"
 <p>
 	&nbsp;</p>
 <p>
-	<img src="/img/articles/qwt_oscillo.png" /></p>
+	<img src="/clubs/robot/img/articles/qwt_oscillo.png" /></p>
 <p>
-	<a href="/img/articles/Oscillo_video.mpeg">voir la video de demo</a></p>
+	<a href="/clubs/robot/img/articles/Oscillo_video.mpeg">voir la video de demo</a></p>
 <h2>
 	Les sources :</h2>
 <ol type="disc">

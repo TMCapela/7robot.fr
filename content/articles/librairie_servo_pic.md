@@ -21,7 +21,7 @@ author = "Martin"
 <p>
 	Cette librairie utilise donc les interruptions sur le <strong>Timer0</strong> pour commander jusqu&#39;&agrave; 8 servos connect&eacute;s sur le <strong>port B</strong>. Nous allons Envoyer les pulsations pour chaque servo &agrave; la suite, puis attendre 20ms avant de recommencer. Sur le sch&eacute;ma suivant vous voyez bien que le d&eacute;lai entre deux pulsations sur RB0 va varier en fonction de ce qu&#39;on envoie &agrave; RB1, mais c&#39;est n&eacute;gligeable.</p>
 <p>
-	<a href="/img/articles/chronographe-servo.svg"><img src="/img/articles/chronographe-servo.png" /></a></p>
+	<a href="/clubs/robot/img/articles/chronographe-servo.svg"><img src="/clubs/robot/img/articles/chronographe-servo.png" /></a></p>
 <h2>
 	Utilisation</h2>
 <p>

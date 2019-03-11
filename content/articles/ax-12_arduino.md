@@ -5,7 +5,7 @@ author = "Martin"
 +++
 
 <p>
-	<img src="/img/articles/ax12a_medium.jpg" style="float:right;margin:15px" /></p>
+	<img src="/clubs/robot/img/articles/ax12a_medium.jpg" style="float:right;margin:15px" /></p>
 <p>
 	Dans le top des servomoteurs, l&#39;AX-12 tient une bonne place. Il est fabriqu&eacute; en Cor&eacute;e par Robotis, vendu $45, et vous fera gagner un temps &eacute;norme. On le contr&ocirc;le avec un bus s&eacute;rie, de type <strong>RS-485 &agrave; trois fils</strong>, et un syst&egrave;me d&#39;adresses. Voici comment utiliser vos AX-12 (et peut-&ecirc;tre d&#39;autres produits Dynamixel) <strong>simplement avec un Arduino</strong>.</p>
 <div>
@@ -20,7 +20,7 @@ author = "Martin"
 	<h2>
 		Branchement</h2>
 	<p>
-		<img src="/img/articles/ax12pinout_medium.png" style="float:left;margin:15px" /></p>
+		<img src="/clubs/robot/img/articles/ax12pinout_medium.png" style="float:left;margin:15px" /></p>
 	<p>
 		La commande s&#39;effectue via un bus en <em>daisy chain</em>&nbsp;c&#39;est-&agrave;-dire que chaque servo a deux connecteurs identiques, pour raccorder facilement plusieurs servos en parall&egrave;le.</p>
 	<p>
@@ -37,7 +37,7 @@ author = "Martin"
 		- <strong>VDD</strong> sur du 7V-10V, par exemple sur la pin&nbsp;<b>Vin</b>&nbsp;de votre Arduino, qui est reli&eacute;e au connecteur d&#39;alimentation de la carte ; et sur ce connecteur vous branchez un transformateur 9V par exemple.</p>
 	<p>
 		- <strong>Data</strong> sur les pins TX et RX (1 et 0) de votre Arduino, par exemple en soudant le fil &agrave; deux pins d&#39;une tulipe m&acirc;le.</p>
-	<a href="/img/articles/ax12-test.jpg"><img src="/img/articles/ax12-test_medium.jpg" style="float:right;margin:15px" /></a>
+	<a href="/clubs/robot/img/articles/ax12-test.jpg"><img src="/clubs/robot/img/articles/ax12-test_medium.jpg" style="float:right;margin:15px" /></a>
 	<h2>
 		Programmes de test</h2>
 	<p>

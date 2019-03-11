@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="/clubs/robot/img/Miniature_logo_2.png" type="image/x-icon" />
+<link rel="icon" href="/clubs/robot/img/Miniature_logo_2.png" type="image/x-icon" />
+
+
+<title>Communication sans fil avec Xbee</title>
+
+<meta name="generator" content="Hugo 0.40.1" />
+
+
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/owl.carousel.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/airspace-local-fonts.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/airspace.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/style.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/ionicons.min.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/animate.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/responsive.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/syntax.css" />
+
+
+
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="https://www.bde.enseeiht.fr/clubs/robot/js/bootstrap.min.js"></script>
+<script src="https://www.bde.enseeiht.fr/clubs/robot/js/owl.carousel.min.js"></script>
+<script src="https://www.bde.enseeiht.fr/clubs/robot/js/plugins.js"></script>
+<script src="https://www.bde.enseeiht.fr/clubs/robot/js/min/waypoints.min.js"></script>
+<script src="https://www.bde.enseeiht.fr/clubs/robot/js/jquery.counterup.js"></script>
+
+
+<script src="https://www.bde.enseeiht.fr/clubs/robot/js/main.js"></script>
+
+<script>UPLOADCARE_PUBLIC_KEY = "demopublickey";</script>
+<script src="https://ucarecdn.com/libs/widget/2.10.2/uploadcare.full.min.js" charset="utf-8"></script>
+
+
+</head>
+<body>
+
+	
+<header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://www.bde.enseeiht.fr/clubs/robot/">
+              <img src="https://www.bde.enseeiht.fr/clubs/robot/img/logo.png" alt="7Robot Logo">
+            </a>
+          </div>
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://www.bde.enseeiht.fr/clubs/robot/">Accueil</a></li>
+              
+                <li><a href="/clubs/robot/article/">Articles</a></li>
+              
+                <li><a href="/clubs/robot/actualites/">Actualités</a></li>
+              
+                <li><a href="/clubs/robot/activites/">Nos activités</a></li>
+              
+                <li><a href="/clubs/robot/contact/">Contact</a></li>
+              
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+	<div class="post">
+	  
+	  <section class="section" style="border: 1px dotted #ddd;">
+	    <div class="container">
+	      <div class="row">
+	        <div align="justify">
+	          <div class="block">
+							
+	            <h1>Communication sans fil avec Xbee</h1>
+	            <div class="post-info-wrapper">
+	              <p class="italic">Par <span class="bold">Jeremie</span> le <span class="bold">16 Septembre 2011</span></p>
+	            </div>
+	            <hr />
+	            <p><p><h2>
+    Intro</h2>
+<p>
+    Les modules<strong> XBee</strong> permettent d&#39;&eacute;tablir une liaison RS232 sans fils .</p>
+<p>
+    <strong>Avantages :</strong> prix ; simplicit&eacute; de mise en oeuvre ; fiabilit&eacute; ; port&eacute;e</p>
+<p>
+    <strong>Inconv&eacute;nients</strong> : pas un emp&acirc;tement de type labdec ; alim 3.3V</p>
+<p>
+    Nous allons d&eacute;crire les &eacute;tapes qui nous ont permis de comprendre et de faire fonctionner cette liaison sans fil .</p>
+<p>
+    <img src="/clubs/robot/img/articles/usb_xbee_medium.jpg" style="float:right" /><img src="/clubs/robot/img/articles/xbee_im_medium.jpg" style="float:left" /></p>
+<h2>
+    Le mat&eacute;riel utilis&eacute;</h2>
+<div>
+    - &Agrave; gauche un des&nbsp;deux XBee pro ;
+    <p>
+        - &Agrave; droite l&#39;XBee explorer (de <a href="http://www.sparkfun.com/products/8687">SparkFun</a>), qui est un adaptateur USB/XBee ;</p>
+    <p>
+        - Et finalement un Arduino Uno.</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        Comment s&#39;y prendre ?</p>
+    <p>
+        De nombreux tutoriels sur internet, ne mentionnent pas la configuration des<strong> xbee</strong> , ils les utilisent directement et &ccedil;a marche pour 90% des cas (car la configuration par d&eacute;faut est bien pens&eacute;e). Pour les 10% restant, il faut v&eacute;rifier, mettre &agrave; jour le<strong> firmware </strong>et configurer le <strong>mode de fonctionement</strong> !&nbsp;</p>
+    <h2>
+        Etape 1 : Communication Xbee &lt;-&gt; Pc</h2>
+    <p>
+        Les d&eacute;veloppeurs d&#39;<strong>XBee</strong> proposent un <strong>logiciel (XTCU)</strong> de test et configuration car chaque<strong> </strong>XBee poss&egrave;de un <strong>firmware (</strong>qui peut &ecirc;tre mis &agrave; jour) et qu&#39;il est aussi possible, voire indispensable, de r&eacute;gler les diff&eacute;rents param&egrave;tres :</p>
+    <ol type="disc">
+        <li>
+            Identifiant du reseau (PANID)</li>
+        <li>
+            Channel de comunication</li>
+        <li>
+            Le mode de fonctionnement</li>
+        <li>
+            Et plein d&#39;autre param&egrave;tres (pour une utilisation plus pouss&eacute;e)</li>
+    </ol>
+    <p>
+        Ce test permet dans un premier temps de v&eacute;rifier le fonctionement,&nbsp;<strong>la version</strong> du firmware, et de r&eacute;gler le <strong>mode de fonctionnement</strong> de chaque<strong> </strong>xbee . L&#39;adapteur<strong> usb/xbee</strong> est tr&egrave;s utile pour cette &eacute;tape .</p>
+    <h2>
+        Etape 2 : Choix du mode de fonctionnement</h2>
+    <p>
+        Avec des<strong> </strong>XBee on peut faire des choses plus ou moins compliqu&eacute;es , si vous utiliser&nbsp;<strong>2 XBee</strong> pour r&eacute;aliser une simple liaison <strong>RS232 </strong>sans fils, le mode <strong>&quot;peer to peer&quot;</strong> est conseill&eacute;. Les r&eacute;glages sont alors les suivants :</p>
+    <ol type="disc">
+        <li>
+            PanID et Channel sont identiques pour les 2 Xbee</li>
+        <li>
+            CE=0 (vous choisissez le mode &quot;peer to peer&quot; et non &quot;coordinator/endDevice&quot;</li>
+        <li>
+            A1=1</li>
+        <li>
+            A2=0</li>
+    </ol>
+    <p>
+        Nous avons trouv&eacute; ces r&eacute;glages sur&nbsp;<a href="/clubs/robot/sites/default/files/files/XBee-Manual.pdf">la datatsheet</a> et <a href="/clubs/robot/sites/default/files/files/xbee_config.pdf">un tr&egrave;s bon document &eacute;crit par D.MENESPLIER</a></p>
+    <h2>
+        Etape 3 : Savoir s&#39;ils se sont reconnus</h2>
+    <p>
+        On met en place les 2 xbee (1 sera reli&eacute; au pc et l&#39; autre sera aliment&eacute; et connect&eacute; &agrave; un arduino).</p>
+    <p>
+        Gr&acirc;ce au logiciel fourni, on va demander au xbee raccord&eacute; au pc si il reconnait l&#39;autre XBee. Pour cela on utilise le<strong> terminal du logiciel</strong> et on suit ces etapes :</p>
+    <ul>
+        <li>
+            Mise en mode configuration (<strong> +++ et AT,&nbsp;</strong>cf la doc )</li>
+        <li>
+            La commande <strong>ATND</strong> permet de r&eacute;cup&eacute;rer les informations sur le module trouv&eacute; et les affiche</li>
+        <li>
+            La commande<strong> ATCN </strong>quitte le mode configuration</li>
+    </ul>
+    <h3>
+        <em><img src="/clubs/robot/img/articles/capt_ecranXTCU.PNG" /></em></h3>
+    <h2>
+        Bilan</h2>
+    <p>
+        On sait &agrave; la fin de l&#39;&eacute;tape 3, que nos xbee fonctionent s&eacute;parement, qu&#39;ils ont la bonne configuration et qu&#39;ils se reconaissent. La liaison est donc bien &eacute;tablie ! Cette liaison se teste comme une simple<strong> liaison s&eacute;rie RS232 </strong>filaire.</p>
+    <h2>
+        Ressources :</h2>
+    <ol type="disc">
+        <li>
+            <a href="/clubs/robot/sites/default/files/files/XBee-Manual.pdf">La datasheet Xbee</a></li>
+        <li>
+            <a href="/clubs/robot/sites/default/files/files/xbee_config.pdf">Un document qui explique&nbsp; la configuration des xbee </a></li>
+        <li>
+            <a href="/clubs/robot/sites/default/files/files/XCTU_xbee.pdf">L&#39;explication du logiciel</a></li>
+    </ol>
+</div>
+<p>
+    &nbsp;</p></p>
+</p>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </section>
+	</div>
+	
+
+	
+		
+
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>Venez nous dévouvrir !</h2>
+          <p>Vous pouvez en apprendre un peu plus sur nous grâce à ce site, contactez-nous avec la page dédiée <br/>ou venez nous voir à l'ENSEEIHT dans la fameuse Tour Radio (3ème étage)</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	
+
+	
+<section id="clients-logo-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div id="clients-logo" class="owl-carousel">
+            
+            <div class="clients-logo-img">
+              <a href="https://www.elsys-design.com/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo1.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="https://www.sick.com/fr/fr/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo2.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="https://vink.fr/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo3.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="/clubs/robot/img/dossier_partenariat.pdf" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo6.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="http://www.planete-sciences.org/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo4.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="https://enseeiht.fr" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo5.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="https://www.elsys-design.com/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo1.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="https://www.sick.com/fr/fr/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo2.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="/clubs/robot/img/dossier_partenariat.pdf" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo6.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="https://vink.fr/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo3.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="http://www.planete-sciences.org/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo4.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="https://enseeiht.fr" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo5.png" alt="Features"></a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	<section id="social">
+
+  
+    <a class="symbol" href="mailto:7robot@bde.enseeiht.fr">
+        <i class="fa fa-envelope"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.facebook.com/7Robot/">
+        <i class="fa fa-facebook"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/7Robot">
+        <i class="fa fa-github"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/7robot_n7">
+        <i class="fa fa-twitter"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.youtube.com/channel/UCOTcSBDVzCKDfW-eP7js19Q">
+        <i class="fa fa-youtube"></i>
+    </a>
+    
+
+</section>
+
+
+	
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-manu">
+          <ul>
+            
+            <li><a href="#">Qui sommes-nous ?</a></li>
+            
+            <li><a href="/clubs/robot/contact">Contactez-nous</a></li>
+            
+            <li><a href="/clubs/robot/article">Articles</a></li>
+            
+            <li><a href="/clubs/robot/actualites">Actualités</a></li>
+            
+          </ul>
+        </div>
+        <p>&copy; 7Robot 2018</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

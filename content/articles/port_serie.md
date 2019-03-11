@@ -7,7 +7,7 @@ author = "Maxime"
 <h2>
 	Pr&eacute;sentation</h2>
 <p>
-	Le port s&eacute;rie commun&eacute;ment appell&eacute; liaison RS232 est une valeur sure en robotique amateur malgr&egrave;s<img src="/img/articles/portserie.jpg" style="float:right;margin:15px" /> son &acirc;ge. Il offre des supports de communication robustes et simples &agrave; mettre en oeuvre.</p>
+	Le port s&eacute;rie commun&eacute;ment appell&eacute; liaison RS232 est une valeur sure en robotique amateur malgr&egrave;s<img src="/clubs/robot/img/articles/portserie.jpg" style="float:right;margin:15px" /> son &acirc;ge. Il offre des supports de communication robustes et simples &agrave; mettre en oeuvre.</p>
 <p>
 	Etant donn&eacute; que ce bus est &quot;s&eacute;rie&quot;, les informations sont envoy&eacute;es bit &agrave; bit, &quot;&agrave; la chaine&quot; (on parle de trames), contrairement au port parall&egrave;le. Il en r&eacute;sulte un d&eacute;bit moins important mais n&eacute;anmoins suffisant pour nos applications.</p>
 <p>

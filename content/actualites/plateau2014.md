@@ -3,7 +3,7 @@ title = "Plateau 2014"
 dater = "03 Octobre 2013"
 author = "Pizz"
 weight = 14
-image = "/img/articles/mammouth.jpg"
+image = "/clubs/robot/img/articles/mammouth.jpg"
 +++
 
 <p>
@@ -17,4 +17,4 @@ image = "/img/articles/mammouth.jpg"
 <p>
 	<span>IESQ :&nbsp;</span><span>certains 1A risquent de ne m&ecirc;me pas avoir eu le temps de bosser sur le plateau &agrave; cette vitesse (viendez vite comme dirait le sun7)</span></p>
 <p>
-	<span><img src="/img/articles/mammouth.jpg" style="float:left" width="500" /></span></p>
+	<span><img src="/clubs/robot/img/articles/mammouth.jpg" style="float:left" width="500" /></span></p>

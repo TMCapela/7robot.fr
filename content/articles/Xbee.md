@@ -15,7 +15,7 @@ author = "Jeremie"
 <p>
 	Nous allons d&eacute;crire les &eacute;tapes qui nous ont permis de comprendre et de faire fonctionner cette liaison sans fil .</p>
 <p>
-	<img src="/img/articles/usb_xbee_medium.jpg" style="float:right" /><img src="/img/articles/xbee_im_medium.jpg" style="float:left" /></p>
+	<img src="/clubs/robot/img/articles/usb_xbee_medium.jpg" style="float:right" /><img src="/clubs/robot/img/articles/xbee_im_medium.jpg" style="float:left" /></p>
 <h2>
 	Le mat&eacute;riel utilis&eacute;</h2>
 <div>
@@ -77,7 +77,7 @@ author = "Jeremie"
 			La commande<strong> ATCN </strong>quitte le mode configuration</li>
 	</ul>
 	<h3>
-		<em><img src="/img/articles/capt_ecranXTCU.PNG" /></em></h3>
+		<em><img src="/clubs/robot/img/articles/capt_ecranXTCU.PNG" /></em></h3>
 	<h2>
 		Bilan</h2>
 	<p>

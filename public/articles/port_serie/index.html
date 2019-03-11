@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="/clubs/robot/img/Miniature_logo_2.png" type="image/x-icon" />
+<link rel="icon" href="/clubs/robot/img/Miniature_logo_2.png" type="image/x-icon" />
+
+
+<title>Utilisation du port série</title>
+
+<meta name="generator" content="Hugo 0.40.1" />
+
+
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/owl.carousel.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/airspace-local-fonts.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/airspace.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/style.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/ionicons.min.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/animate.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/responsive.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/syntax.css" />
+
+
+
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="https://www.bde.enseeiht.fr/clubs/robot/js/bootstrap.min.js"></script>
+<script src="https://www.bde.enseeiht.fr/clubs/robot/js/owl.carousel.min.js"></script>
+<script src="https://www.bde.enseeiht.fr/clubs/robot/js/plugins.js"></script>
+<script src="https://www.bde.enseeiht.fr/clubs/robot/js/min/waypoints.min.js"></script>
+<script src="https://www.bde.enseeiht.fr/clubs/robot/js/jquery.counterup.js"></script>
+
+
+<script src="https://www.bde.enseeiht.fr/clubs/robot/js/main.js"></script>
+
+<script>UPLOADCARE_PUBLIC_KEY = "demopublickey";</script>
+<script src="https://ucarecdn.com/libs/widget/2.10.2/uploadcare.full.min.js" charset="utf-8"></script>
+
+
+</head>
+<body>
+
+	
+<header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://www.bde.enseeiht.fr/clubs/robot/">
+              <img src="https://www.bde.enseeiht.fr/clubs/robot/img/logo.png" alt="7Robot Logo">
+            </a>
+          </div>
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://www.bde.enseeiht.fr/clubs/robot/">Accueil</a></li>
+              
+                <li><a href="/clubs/robot/article/">Articles</a></li>
+              
+                <li><a href="/clubs/robot/actualites/">Actualités</a></li>
+              
+                <li><a href="/clubs/robot/activites/">Nos activités</a></li>
+              
+                <li><a href="/clubs/robot/contact/">Contact</a></li>
+              
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+	<div class="post">
+	  
+	  <section class="section" style="border: 1px dotted #ddd;">
+	    <div class="container">
+	      <div class="row">
+	        <div align="justify">
+	          <div class="block">
+							
+	            <h1>Utilisation du port série</h1>
+	            <div class="post-info-wrapper">
+	              <p class="italic">Par <span class="bold">Maxime</span> le <span class="bold">01 Septembre 2011</span></p>
+	            </div>
+	            <hr />
+	            <p><p><h2>
+    Pr&eacute;sentation</h2>
+<p>
+    Le port s&eacute;rie commun&eacute;ment appell&eacute; liaison RS232 est une valeur sure en robotique amateur malgr&egrave;s<img src="/clubs/robot/img/articles/portserie.jpg" style="float:right;margin:15px" /> son &acirc;ge. Il offre des supports de communication robustes et simples &agrave; mettre en oeuvre.</p>
+<p>
+    Etant donn&eacute; que ce bus est &quot;s&eacute;rie&quot;, les informations sont envoy&eacute;es bit &agrave; bit, &quot;&agrave; la chaine&quot; (on parle de trames), contrairement au port parall&egrave;le. Il en r&eacute;sulte un d&eacute;bit moins important mais n&eacute;anmoins suffisant pour nos applications.</p>
+<p>
+    Deux modes de fonctionnement sont possibles pour le port s&eacute;rie. Le mode est choisi en fonction des besoins. A chaque mode correspondent des pisns ur le connecteur DB9 ci contre.</p>
+<ol type="disc">
+    <li>
+        Le mode synchrone</li>
+</ol>
+<p>
+    Electriquement, le sch&eacute;ma se r&eacute;sume &agrave; trois fils : un pour l&#39;horloge,&nbsp; un pour les donn&eacute;es et une masse commune (comme pour le bus I&sup2;C). Ce mode a l&#39;avantage de mettre plusieurs p&eacute;riph&eacute;riques en s&eacute;rie via une relation m&acirc;itre esclave. Cependant bien que semblable &agrave; l&#39;I&sup2;C, il n&#39;offre pas les m&ecirc;mes fonctionnalit&eacute;s : tout est &agrave; reprendre (arbitrage du bus, adressage&hellip;). De plus il fonctionne en half duplex : deux p&eacute;riph&eacute;riques ne peuvent pas parler en m&ecirc;me temps.</p>
+<p>
+    TODO : sch&eacute;ma</p>
+<p>
+    En robotique, nous pr&eacute;f&eacute;rons utiliser le bus I&sup2;C plut&ocirc;t que du s&eacute;rie asynchrone lorqu&#39;il s&#39;agit de faire communiquer plusieurs p&eacute;riph&eacute;riques en s&eacute;rie, les fonctions mat&eacute;rielles comme l&#39;adressage et l&#39;arbitrage du bus sont tr&egrave;s appr&eacute;ci&eacute;es.</p>
+<ol type="disc">
+    <li>
+        Le mode asynchrone</li>
+</ol>
+<p>
+    Il <strong>s&#39;agit de la plus large application</strong> du port s&eacute;rie en robotique. L&agrave; encore, le sch&eacute;ma &eacute;lectrique se r&eacute;sume &agrave; trois fils : un pour &eacute;mettre les donn&eacute;es (TX), un pour les recevoir (RX), et une masse.</p>
+<p>
+    Nous n&#39;entrons pas ici dans les d&eacute;tails du fonctionnement de la liaison s&eacute;rie comme la gestion de l&#39;horloge et le format des trames. Vous pouvez consulter :</p>
+<p>
+    TODO : liens</p>
+<p>
+    L&#39;informaticien peut faire abstraction de ces informations en consid&eacute;rant qu&#39;il ne s&#39;agit que de transit de chaines de caract&egrave;res d&#39;un buffer A bers un buffer B.</p>
+<p>
+    Je tiens cependant &agrave; mettre en &eacute;vidence l&#39;importance du <strong>croisement </strong>de la ligne. En effet, en mode asynchrone, non seulement il n&#39;y a<strong> que deux p&eacute;riph&eacute;riques</strong> qui peuvent communiquer ensembles et pour ce faire il faut que l&#39;&eacute;mission de l&#39;un de fasse sur le r&eacute;cepteur de l&#39;autre et vice ver&ccedil;a : on parle de ligne crois&eacute;e. Ceci permet une liaison <strong>full duplex</strong> : les deux p&eacute;riph&eacute;riques peuvent parler en m&ecirc;me temps.</p>
+<p>
+    TODO : sch&eacute;ma</p>
+<h2>
+    Utilisation logicielle du port s&eacute;rie</h2>
+<p>
+    TODO : pr&eacute;sentation de la librairie C utilis&eacute;e&hellip;</p>
+<p>
+    &nbsp;</p></p>
+</p>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </section>
+	</div>
+	
+
+	
+		
+
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>Venez nous dévouvrir !</h2>
+          <p>Vous pouvez en apprendre un peu plus sur nous grâce à ce site, contactez-nous avec la page dédiée <br/>ou venez nous voir à l'ENSEEIHT dans la fameuse Tour Radio (3ème étage)</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	
+
+	
+<section id="clients-logo-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div id="clients-logo" class="owl-carousel">
+            
+            <div class="clients-logo-img">
+              <a href="https://www.elsys-design.com/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo1.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="https://www.sick.com/fr/fr/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo2.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="https://vink.fr/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo3.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="/clubs/robot/img/dossier_partenariat.pdf" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo6.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="http://www.planete-sciences.org/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo4.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="https://enseeiht.fr" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo5.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="https://www.elsys-design.com/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo1.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="https://www.sick.com/fr/fr/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo2.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="/clubs/robot/img/dossier_partenariat.pdf" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo6.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="https://vink.fr/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo3.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="http://www.planete-sciences.org/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo4.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="https://enseeiht.fr" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo5.png" alt="Features"></a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	<section id="social">
+
+  
+    <a class="symbol" href="mailto:7robot@bde.enseeiht.fr">
+        <i class="fa fa-envelope"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.facebook.com/7Robot/">
+        <i class="fa fa-facebook"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/7Robot">
+        <i class="fa fa-github"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/7robot_n7">
+        <i class="fa fa-twitter"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.youtube.com/channel/UCOTcSBDVzCKDfW-eP7js19Q">
+        <i class="fa fa-youtube"></i>
+    </a>
+    
+
+</section>
+
+
+	
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-manu">
+          <ul>
+            
+            <li><a href="#">Qui sommes-nous ?</a></li>
+            
+            <li><a href="/clubs/robot/contact">Contactez-nous</a></li>
+            
+            <li><a href="/clubs/robot/article">Articles</a></li>
+            
+            <li><a href="/clubs/robot/actualites">Actualités</a></li>
+            
+          </ul>
+        </div>
+        <p>&copy; 7Robot 2018</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

@@ -3,11 +3,11 @@ title = "News Freescale"
 dater = "23 Février 2014"
 author = "Pizz"
 weight = 15
-image = "/img/articles/IMG_20140128_135550.jpg"
+image = "/clubs/robot/img/articles/IMG_20140128_135550.jpg"
 +++
 
 <p>
-	<img src="/img/articles/IMG_20140128_135550.jpg" width="600"/></p>
+	<img src="/clubs/robot/img/articles/IMG_20140128_135550.jpg" width="600"/></p>
 <p>
 	Salut !</p>
 <p>

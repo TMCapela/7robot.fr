@@ -4,85 +4,85 @@ subtitle: Quelques articles sur la robotique
 
 portfolio:
   - category: Mécanique
-    url: "/articles/alim_pc"
+    url: "/clubs/robot/articles/alim_pc"
     image: "/img/articles/IMAG0241.jpg"
     name: Fabrication d'une alimentation stabilisée à partir d'une alim de PC
     description: >
 
   - category: Electronique
-    url: "/articles/carte_pic"
+    url: "/clubs/robot/articles/carte_pic"
     image: "/img/articles/picdev_schema_mini.png"
     name: Carte de développement PIC18F2550
     description: >
 
   - category: Informatique
-    url: "/articles/qt_et_la_robotique"
+    url: "/clubs/robot/articles/qt_et_la_robotique"
     image: "/img/articles/Qt_logo.png"
     name: Qt et la Robotique (Intro)
     description: >
 
   - category: Informatique
-    url: "/articles/fonctionalites_qt"
+    url: "/clubs/robot/articles/fonctionalites_qt"
     image: "/img/articles/Qt_logo.png"
     name: Autres fonctionalités de Qt (avancé)
     description: >
 
   - category: Electronique
-    url: "/articles/i2c_1"
+    url: "/clubs/robot/articles/i2c_1"
     image: "/img/articles/I2c_logo.png"
     name: I2C (1/2) Intoduction
     description: >
 
   - category: Electronique
-    url: "/articles/i2c_2"
+    url: "/clubs/robot/articles/i2c_2"
     image: "/img/articles/I2c_logo.png"
     name: I2C (2/2) Mise en oeuvre pratique
     description: >
 
   - category: Electronique
-    url: "/articles/ponth"
+    url: "/clubs/robot/articles/ponth"
     image: "/img/articles/Pont_En_H.png"
     name: Ponts en H
     description: >
 
   - category: Electronique
-    url: "/articles/xbee"
+    url: "/clubs/robot/articles/xbee"
     image: "/img/articles/xbee_im_medium.jpg"
     name: Communication sans fil avec Xbee
     description: >
 
   - category: Electronique
-    url: "/articles/ax-12_arduino"
+    url: "/clubs/robot/articles/ax-12_arduino"
     image: "/img/articles/AX12A.jpg"
     name: Les servomoteurs AX-12 avec un Arduino
     description: >
 
   - category: Electronique
-    url: "/articles/librairie_servo_pic"
+    url: "/clubs/robot/articles/librairie_servo_pic"
     image: "/img/articles/ori-servomoteur-sg90-19377.jpg"
     name: Librairie C18 pour servomoteurs standards et PIC18F
     description: >
 
   - category: Electronique
-    url: "/articles/bus_can"
+    url: "/clubs/robot/articles/bus_can"
     image: "/img/articles/canAuto.png"
     name: A la découverte du Bus CAN
     description: >
 
   - category: Electronique
-    url: "/articles/convertisseurs_can_uart"
+    url: "/clubs/robot/articles/convertisseurs_can_uart"
     image: "/img/articles/canAuto.png"
     name: Convertisseurs CAN↔UART
     description: >
 
   - category: Informatique
-    url: "/articles/port_serie"
+    url: "/clubs/robot/articles/port_serie"
     image: "/img/articles/portserie.jpg"
     name: Utilisation du port série
     description: >
 
   - category: Informatique
-    url: "/articles/friendlyarm"
+    url: "/clubs/robot/articles/friendlyarm"
     image: "/img/articles/mini2440-35.jpg"
     name: FriendlyARM Mini6410
     description: >
@@ -108,7 +108,7 @@ clients:
   - image: "/img/clients/clients-logo3.png"
     url: "https://vink.fr/"
   - image: "/img/clients/clients-logo6.png"
-    url: "/img/dossier_partenariat.pdf"
+    url: "/clubs/robot/img/dossier_partenariat.pdf"
   - image: "/img/clients/clients-logo4.png"
     url: "http://www.planete-sciences.org/"
   - image: "/img/clients/clients-logo5.png"
@@ -118,7 +118,7 @@ clients:
   - image: "/img/clients/clients-logo2.png"
     url: "https://www.sick.com/fr/fr/"
   - image: "/img/clients/clients-logo6.png"
-    url: "/img/dossier_partenariat.pdf"
+    url: "/clubs/robot/img/dossier_partenariat.pdf"
   - image: "/img/clients/clients-logo3.png"
     url: "https://vink.fr/"
   - image: "/img/clients/clients-logo4.png"

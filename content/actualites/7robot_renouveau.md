@@ -6,37 +6,37 @@ weight = 18
 +++
 
 <p>
-	Bonjour &agrave; tous !</p>
+	Bonjour à tous !</p>
 <p>
-	Cela faisait longtemps que ce site n&#39;a pas &eacute;t&eacute; tenu, mais aujourd&#39;hui est un nouveau jour et beaucoup d&#39;eau &agrave; coul&eacute; sous les ponts.</p>
+	Cela faisait longtemps que ce site n'a pas été tenu, mais aujourd'hui est un nouveau jour et beaucoup d'eau a coulé sous les ponts.</p>
 <p>
-	Qui dit nouvelle ann&eacute;e dit changement de bureau. Et c&#39;est pourquoi nous sommes de retour sur notre blog pour donner de nos nouvelles. ;)</p>
+	Qui dit nouvelle année dit changement de bureau. Et c'est pourquoi nous sommes de retour sur notre blog pour donner de nos nouvelles. ;)</p>
 <h3>
 	<strong>Des nouvelles ?</strong></h3>
 <p>
-	Oui ! Parce qu&#39;il s&#39;est pass&eacute; pas mal de choses depuis.<br />
-	Pour &eacute;viter d&#39;&eacute;crire tout un roman, on va aller &agrave; l&#39;essentiel : cette ann&eacute;e, la Coupe de France de Robotique a &eacute;t&eacute; une r&eacute;ussite !</p>
+	Oui ! Parce qu'il s'est passé pas mal de choses depuis.<br />
+	Pour éviter d'écrire tout un roman, on va aller à l'essentiel : cette année, la Coupe de France de Robotique a été une réussite !</p>
 <p>
-	<strong>Le Principe de cette ann&eacute;e :</strong>Pour la Coupe 2015, le th&egrave;me est Robomovies. Nous avons droit &agrave; des claps &agrave; aller fermer, des gobelets de pop-corn &agrave; remplir et &agrave; ramener dans des salles de cin&eacute;ma, et pieds de spots &agrave; construire avec une lampe au dessus, et pour finir les marches de Cannes &agrave; monter tout en posant le tapis rouge !</p>
+	<strong>Le Principe de cette année :</strong>Pour la Coupe 2015, le thème est Robomovies. Nous avons droit à des claps à aller fermer, des gobelets de pop-corn à remplir et à ramener dans des salles de cinéma, et pieds de spots à construire avec une lampe au dessus, et pour finir les marches de Cannes à monter tout en posant le tapis rouge !</p>
 <p>
-	Le programme s&#39;annonce plut&ocirc;t interessant.</p>
+	Le programme s'annonce plutôt interessant.</p>
 <p>
-	<strong>Notre strat&eacute;gie :&nbsp;</strong>Comme chaque ann&eacute;e, nous d&eacute;cidons de faire 2 robots.</p>
+	<strong>Notre stratégie : </strong>Comme chaque année, nous décidons de faire 2 robots.</p>
 <p>
-	<em>Le robot principal: Alfred Hitchbot. </em>Il aura pour principal objectif d&#39;empiler les plots de spots avec une balle de tennis (lampe) au dessus, tout en fermant les claps. Enfin, si on y arrive en bonus il ira aussi ramener des gobelets de pop-corn dans la zone de d&eacute;part (qui est une zone de cin&eacute;ma). Le travail s&#39;annonce charg&eacute; pour lui !</p>
+	<em>Le robot principal: Alfred Hitchbot. </em>Il aura pour principal objectif d'empiler les plots de spots avec une balle de tennis (lampe) au dessus, tout en fermant les claps. Enfin, si on y arrive en bonus il ira aussi ramener des gobelets de pop-corn dans la zone de départ (qui est une zone de cinéma). Le travail s'annonce chargé pour lui !</p>
 <p>
-	A c&ocirc;t&eacute;, <em>le robot secondaire : Tarantibot.</em>Tout en volupt&eacute;e, Tarantibot n&#39;a qu&#39;une chose en t&ecirc;te : briller de mille feux sous les projecteurs. Il va donc foncer vers les marches pour les monter d&#39;un pas effain&eacute; ! Et tant qu&#39;on y est, il tient un tapis bien pli&eacute; a chaque bras. Il est pr&ecirc;t &agrave; les d&eacute;poser tout en finesse lors de la mont&eacute;e des marches.</p>
+	A côté, <em>le robot secondaire : Tarantibot.</em>Tout en voluptée, Tarantibot n'a qu'une chose en tête : briller de mille feux sous les projecteurs. Il va donc foncer vers les marches pour les monter d'un pas effainé ! Et tant qu'on y est, il tient un tapis bien plié a chaque bras. Il est prêt à les déposer tout en finesse lors de la montée des marches.</p>
 <p>
-	<strong>Le r&eacute;sultat :</strong>Le r&eacute;sultat de cette ann&eacute;e est inesp&eacute;r&eacute; : apr&egrave;s un premier match un peu hasardeux ou nous oublions de mettre les tapis sur Tarantibot, et un Hitchbot pas tr&egrave;s en forme, nous faisons un score bas mais habituel pour le club autour des 25 points... Mais cette ann&eacute;e, nous ne comptons pas nous arr&ecirc;ter l&agrave; ! Direction le stand pour une nuit riche en r&eacute;sultats. D&egrave;s le lendemain, on fait des scores allant de 65 &agrave; 87 points ! Conclusion, on grimpe en fl&egrave;che au classement, pour arriver en fin de qualification &agrave; la <u>7&egrave;me place</u> : &agrave; nous les <strong>phases finales</strong>. :)<br />
-	Et on continue ! Toujours aussi &eacute;bahis, des &eacute;toiles plein les yeux, m&eacute;lang&eacute; &agrave; une grosse part d&#39;incr&eacute;dulit&eacute;... on est pas habitu&eacute;s &agrave; &ccedil;a au club ! &nbsp;<br />
-	Nous gagnons notre match de 8&egrave;me de finale haut la main... Que dire, tout roule pour nous !&nbsp;</p>
+	<strong>Le résultat :</strong>Le résultat de cette année est inespéré : après un premier match un peu hasardeux ou nous oublions de mettre les tapis sur Tarantibot, et un Hitchbot pas très en forme, nous faisons un score bas mais habituel pour le club autour des 25 points... Mais cette année, nous ne comptons pas nous arrêter là ! Direction le stand pour une nuit riche en résultats. Dès le lendemain, on fait des scores allant de 65 à 87 points ! Conclusion, on grimpe en flèche au classement, pour arriver en fin de qualification à la <u>7ème place</u> : à nous les <strong>phases finales</strong>. :)<br />
+	Et on continue ! Toujours aussi ébahis, des étoiles plein les yeux, mélangé à une grosse part d'incrédulité... on est pas habitués à ça au club !  <br />
+	Nous gagnons notre match de 8ème de finale haut la main... Que dire, tout roule pour nous ! </p>
 <p>
 	Mais un pop-corn aura eu raison de notre robot... Il le bloque et nous perdons en <strong>quart de finale</strong> !</p>
 <p>
-	<u><strong>R&eacute;sultat :</strong></u> 7Robot est 5&egrave;me sur 183 &eacute;quipes &agrave; la Coupe de France de Robotique 2015. :)</p>
+	<u><strong>Résultat :</strong></u> 7Robot est 5ème sur 183 équipes à la Coupe de France de Robotique 2015. :)</p>
 <p>
-	&nbsp;</p>
+	 </p>
 <p>
-	On ne compte bien entendu pas s&#39;arr&ecirc;ter l&agrave;, et nous seront pr&eacute;sent d&egrave;s l&#39;ann&eacute;e prochaine, remont&eacute;s &agrave; bloc pour aller toujours plus loin.<br />
+	On ne compte bien entendu pas s'arrêter là, et nous seront présent dès l'année prochaine, remontés à bloc pour aller toujours plus loin.<br />
 	<br />
 	Robotiquement votre, le prez 2015-2016.</p>

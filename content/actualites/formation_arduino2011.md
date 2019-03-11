@@ -3,11 +3,11 @@ title = "Bilan de la formation Arduino 2011"
 dater = "7 Octobre 2011"
 author = "Martin"
 weight = 6
-image = "/img/articles/DSC00001.JPG"
+image = "/clubs/robot/img/articles/DSC00001.JPG"
 +++
 
 <p>
-	<a href="/img/articles/DSC00001.JPG"><img src="/img/articles/DSC00001_medium.JPG" style="float:left;margin:0px 15px 0px" /></a></p>
+	<a href="/clubs/robot/img/articles/DSC00001.JPG"><img src="/clubs/robot/img/articles/DSC00001_medium.JPG" style="float:left;margin:0px 15px 0px" /></a></p>
 <p>
 	La premi&egrave;re formation organis&eacute;e par le club cette ann&eacute;e, ce jeudi 6 octobre, a &eacute;t&eacute; un <strong>grand succ&egrave;s</strong>.</p>
 <p>

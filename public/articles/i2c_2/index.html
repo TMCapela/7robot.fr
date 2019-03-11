@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="/clubs/robot/img/Miniature_logo_2.png" type="image/x-icon" />
+<link rel="icon" href="/clubs/robot/img/Miniature_logo_2.png" type="image/x-icon" />
+
+
+<title>I²C (1/3) : Introduction</title>
+
+<meta name="generator" content="Hugo 0.40.1" />
+
+
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/owl.carousel.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/airspace-local-fonts.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/airspace.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/style.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/ionicons.min.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/animate.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/responsive.css" />
+<link rel="stylesheet" href="https://www.bde.enseeiht.fr/clubs/robot/css/syntax.css" />
+
+
+
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="https://www.bde.enseeiht.fr/clubs/robot/js/bootstrap.min.js"></script>
+<script src="https://www.bde.enseeiht.fr/clubs/robot/js/owl.carousel.min.js"></script>
+<script src="https://www.bde.enseeiht.fr/clubs/robot/js/plugins.js"></script>
+<script src="https://www.bde.enseeiht.fr/clubs/robot/js/min/waypoints.min.js"></script>
+<script src="https://www.bde.enseeiht.fr/clubs/robot/js/jquery.counterup.js"></script>
+
+
+<script src="https://www.bde.enseeiht.fr/clubs/robot/js/main.js"></script>
+
+<script>UPLOADCARE_PUBLIC_KEY = "demopublickey";</script>
+<script src="https://ucarecdn.com/libs/widget/2.10.2/uploadcare.full.min.js" charset="utf-8"></script>
+
+
+</head>
+<body>
+
+	
+<header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://www.bde.enseeiht.fr/clubs/robot/">
+              <img src="https://www.bde.enseeiht.fr/clubs/robot/img/logo.png" alt="7Robot Logo">
+            </a>
+          </div>
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://www.bde.enseeiht.fr/clubs/robot/">Accueil</a></li>
+              
+                <li><a href="/clubs/robot/article/">Articles</a></li>
+              
+                <li><a href="/clubs/robot/actualites/">Actualités</a></li>
+              
+                <li><a href="/clubs/robot/activites/">Nos activités</a></li>
+              
+                <li><a href="/clubs/robot/contact/">Contact</a></li>
+              
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+	<div class="post">
+	  
+	  <section class="section" style="border: 1px dotted #ddd;">
+	    <div class="container">
+	      <div class="row">
+	        <div align="justify">
+	          <div class="block">
+							
+	            <h1>I²C (1/3) : Introduction</h1>
+	            <div class="post-info-wrapper">
+	              <p class="italic">Par <span class="bold">Maxime</span> le <span class="bold">21 Avril 2011</span></p>
+	            </div>
+	            <hr />
+	            <p><p>
+    <strong>Sommaire</strong></p>
+<ol>
+    <li>
+        Cablage de la ligne</li>
+    <li>
+        Sch&eacute;ma d&#39;une trame I&sup2;C</li>
+</ol>
+<h2>
+    C&acirc;blage de la ligne</h2>
+<p>
+    D&#39;un point de vue &eacute;lectrique, une ligne IC ressemble &agrave; ceci :<br />
+    <br />
+    <img src="/clubs/robot/img/articles/i2c2.png" /><br />
+    <br />
+    Il appara&icirc;t qu&#39;un troisi&egrave;me fil est n&eacute;c&eacute;ssaire au montage : la r&eacute;f&eacute;rence commune du potentiel &eacute;lectrique (GND). On remarque aussi la pr&eacute;sence de deux r&eacute;sistances <em>pull-ups</em> qui fixent le niveau de la ligne au repos &agrave; +Vcc. Ainsi, pour communiquer, un p&eacute;riph&eacute;rique n&#39;aura qu&#39;&agrave; court-curcuiter la ligne pour la ramener au niveau logique 0. Les r&eacute;sisatances<em> pull-ups</em> limitent l&#39;intensit&eacute; du court-circuit &agrave; Vcc/1500 soit environ 3mA pour Vcc = 5 Volts.</p>
+<h2>
+    Sch&eacute;ma d&#39;une trame</h2>
+<p>
+    &nbsp;</p>
+<div>
+    Une trame I&sup2;C est le trac&eacute; de SDA et SDL en fonction du temps.&nbsp;</div>
+<div>
+    &nbsp;</div>
+<div>
+    <img src="/clubs/robot/img/articles/i2c3.png" /></div>
+<div>
+    &nbsp;</div>
+<div>
+    Comme indiqu&eacute; sur le sch&eacute;ma, cette tramme peut &ecirc;tre d&eacute;compos&eacute;e en 7 morceaux :</div>
+<div>
+    &nbsp;</div>
+<ol>
+    <li>
+        <strong>La start-condition :</strong> Celle-ci est g&eacute;n&eacute;r&eacute;e par le maitre. Elle a deux impacts diff&eacute;rents sur les autres p&eacute;riph&eacute;riques de la ligne selon leur nature : pour les autres ma&icirc;tres, elle dissuade de prendre la ligne (pour emp&ecirc;cher la collision) et pour les esclave, elle met tout le monde aux aguets car elle sous-entend qu&#39;une adresse va &ecirc;tre communiquer et qu&#39;un des eclaves va devoir r&eacute;pondre.</li>
+    <li>
+        <strong>L&#39;adresse cod&eacute;e sur 7 bits : </strong>Permet &agrave; l&#39;esclave concern&eacute; de savoir que la suite de la trame le concerne, et dit aux autres qu&#39;ils n&#39;ont pas &agrave; se pr&eacute;occuper de la suite</li>
+    <li>
+        <strong>Le bit R/W :</strong> indique &agrave; l&#39;esclave concern&eacute; si il s&#39;agit d&#39;une lecture ou d&#39;une &eacute;criture. C&#39;est ce bit qui peut autoriser l&#39;esclave &agrave; r&eacute;pondre. Voyons les deux cas possibles : R/W = 0, alors il s&#39;agit d&#39;une &eacute;criture du ma&icirc;tre vers l&#39;esclave, ce dernier a juste &agrave; enregistrer les octets qui vont suivre. Si R/W = 1, alors il s&#39;agit d&#39;une lecture : l&#39;esclave sera - dans ce cas seulement - autoris&eacute; &agrave; r&eacute;pondre, il devra &eacute;ventuellement enregistrer le d&eacute;but de la trame envoy&eacute;e par le maitre pour savoir quelle donn&eacute;e il va devoir renvoyer.&nbsp;Ces deux cas seront trait&eacute;s dans les parties 3 et 4.</li>
+    <li>
+        <strong>Un acknowledge :</strong> il s&#39;agit d&#39;une condition qui est g&eacute;nr&eacute;e sur la ligne <strong>par l&#39;esclave</strong>. C&#39;est la seule initiative (et devoir) qu&#39;&agrave; un esclave. Cette condition est g&eacute;nr&eacute;e par l&#39;esclave tous les 8 bits et permet au maitre de savoir si les donn&eacute;es envoy&eacute;es ont bien &eacute;t&eacute;es re&ccedil;ues. Si l&#39;esclave ne renvoi pas d&#39;acknowledge on dit que c&#39;est une condition de NO-acknowledge qui est g&eacute;n&eacute;e, le maitre met alors fin &agrave; la communication.&nbsp;</li>
+    <li>
+        <strong>Le premier byte de donn&eacute;es</strong></li>
+    <li>
+        <strong>Un nouvel acknowledge :</strong> dans le cas de l&#39;envoi d&#39;une chaine de caract&egrave;res, il y aura alternance octet/acknowledge...</li>
+    <li>
+        <strong>La stop condition : </strong>indique &agrave; l&#39;esclave que le ma&icirc;tre a rel&acirc;che la ligne : soit parce qu&#39;il a fini d&#39;envoyer les donn&eacute;es, soit parce qu&#39;il n&#39;a pas recu d&#39;acknowledge.</li>
+</ol>
+<div>
+    &nbsp;</div>
+<div>
+    &nbsp;</div>
+<div>
+    Ces conditions on &eacute;t&eacute;es d&eacute;finies par Philips lorsque celui-ci a d&eacute;velopp&eacute; l&#39;I&sup2;C. Il faut connaitre ce qu&#39;elles signifient, mais il n&#39;est pas fondamental de savoir &agrave; quoi elles correspondent physiquement (sur le chronogramme), d&#39;ailleurs je n&#39;en parle pas ici. En effet, lorsque l&#39;on mettra en oeuvre la liaison I&sup2;C, ces conditions seront g&eacute;n&eacute;r&eacute;e mat&eacute;riellement par les p&eacute;riph&eacute;riques (que l&#39;on choisira judicieusement).</div>
+<div>
+    &nbsp;</div>
+<div>
+    A titre d&#39;exemple - qui arrive un peu t&ocirc;t dans le document - il faut faire la diff&eacute;rence entre la gestion du bus I&sup2;C grace &agrave; un PIC16F84 et un PIC18F2550 : en effet contrairement au 18F2550, le 16F84 (bien moins r&eacute;cent) ne prend pas en charge mat&eacute;riellement le protocole I&sup2;C, il serait donc &agrave; votre charge de d&eacute;velopper toutes les fonction qui permettraient de g&eacute;n&eacute;rer les conditions &eacute;nonc&eacute;es pr&eacute;cedemment. Bien que tr&eacute;s instructif, ce travail serait laborieux et d&eacute;mod&eacute;. On pr&eacute;fererait (et c&#39;est ce qu&#39;on fera dans la suite de ce document) utiliser le 18f2550 qui int&egrave;gre mat&eacute;riellement un module qui g&eacute;n&egrave;re automatiquement ces conditions. Par exemple, en mode maitre, lorque l&#39;on d&eacute;cide d&#39;&eacute;crire un octet vers un esclave, il suffit de le pr&eacute;ciser quel est cet octet et l&#39;adresse de l&#39;esclave pour que le PIC18f2550 g&eacute;n&egrave;re la trame compl&egrave;te est s&#39;assure de que l&#39;esclave renvoie des acknowledge. De m&ecirc;me, si le 18f2550 est configur&eacute; en esclave, il g&eacute;n&eacute;rera automatiquement un acknowledge apr&egrave;s avoir re&ccedil;u un octet.</div>
+<div>
+    &nbsp;</div>
+<p>
+    <br />
+    &nbsp;</p>
+</p>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </section>
+	</div>
+	
+
+	
+		
+
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>Venez nous dévouvrir !</h2>
+          <p>Vous pouvez en apprendre un peu plus sur nous grâce à ce site, contactez-nous avec la page dédiée <br/>ou venez nous voir à l'ENSEEIHT dans la fameuse Tour Radio (3ème étage)</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	
+
+	
+<section id="clients-logo-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div id="clients-logo" class="owl-carousel">
+            
+            <div class="clients-logo-img">
+              <a href="https://www.elsys-design.com/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo1.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="https://www.sick.com/fr/fr/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo2.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="https://vink.fr/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo3.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="/clubs/robot/img/dossier_partenariat.pdf" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo6.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="http://www.planete-sciences.org/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo4.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="https://enseeiht.fr" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo5.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="https://www.elsys-design.com/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo1.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="https://www.sick.com/fr/fr/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo2.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="/clubs/robot/img/dossier_partenariat.pdf" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo6.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="https://vink.fr/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo3.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="http://www.planete-sciences.org/" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo4.png" alt="Features"></a>
+            </div>
+            
+            <div class="clients-logo-img">
+              <a href="https://enseeiht.fr" onclick="window.open(this.href); return false;"><img src="https://www.bde.enseeiht.fr/clubs/robot//img/clients/clients-logo5.png" alt="Features"></a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	<section id="social">
+
+  
+    <a class="symbol" href="mailto:7robot@bde.enseeiht.fr">
+        <i class="fa fa-envelope"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.facebook.com/7Robot/">
+        <i class="fa fa-facebook"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/7Robot">
+        <i class="fa fa-github"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/7robot_n7">
+        <i class="fa fa-twitter"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.youtube.com/channel/UCOTcSBDVzCKDfW-eP7js19Q">
+        <i class="fa fa-youtube"></i>
+    </a>
+    
+
+</section>
+
+
+	
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-manu">
+          <ul>
+            
+            <li><a href="#">Qui sommes-nous ?</a></li>
+            
+            <li><a href="/clubs/robot/contact">Contactez-nous</a></li>
+            
+            <li><a href="/clubs/robot/article">Articles</a></li>
+            
+            <li><a href="/clubs/robot/actualites">Actualités</a></li>
+            
+          </ul>
+        </div>
+        <p>&copy; 7Robot 2018</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

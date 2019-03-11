@@ -6,6 +6,6 @@ weight = 5
 +++
 
 <p>
-	La premi&egrave;re apr&egrave;s-midi des clubs de 7Robot a eu lieu ce mardi 13 septembre. Les inscriptions ont d&eacute;but&eacute; gaillardement, et &ccedil;a va continuer. Donc cher 1A, n&#39;h&eacute;site pas &agrave; passer nous voir, que ce soit au local en E117, ou quand tu vois un de nos tee-shirt violets !</p>
+	La première après-midi des clubs de 7Robot a eu lieu ce mardi 13 septembre. Les inscriptions ont débuté gaillardement, et ça va continuer. Donc cher 1A, n'hésite pas à passer nous voir, que ce soit au local en E117, ou quand tu vois un de nos tee-shirt violets !</p>
 <p>
-	Les<strong> premi&egrave;res formations</strong> pour les d&eacute;butants devraient avoir lieu juste apr&egrave;s le WEI. Aucune connaissance n&#39;est requise, nous suivrons chacun &agrave; son niveau.</p>
+	Les<strong> premières formations</strong> pour les débutants devraient avoir lieu juste après le WEI. Aucune connaissance n'est requise, nous suivrons chacun à son niveau.</p>

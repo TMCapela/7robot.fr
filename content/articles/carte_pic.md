@@ -26,17 +26,17 @@ author = "Jeremie"
 <h2>
 	Sch&eacute;ma &eacute;lectrique</h2>
 <p>
-	<a href="/img/articles/picdev_schema.png"><img src="/img/articles/picdev_schema_mini.png" /></a></p>
+	<a href="/clubs/robot/img/articles/picdev_schema.png"><img src="/clubs/robot/img/articles/picdev_schema_mini.png" /></a></p>
 <h2>
 	Layouts</h2>
 <h3>
 	Version P-DIP</h3>
 <p>
-	<img src="/img/articles/pic_layout.png" /></p>
+	<img src="/clubs/robot/img/articles/pic_layout.png" /></p>
 <h3>
 	Version CMS (composant mont&eacute; en surface)</h3>
 <p>
-	<img src="/img/articles/pic_cms_434x385.png" /></p>
+	<img src="/clubs/robot/img/articles/pic_cms_434x385.png" /></p>
 <h2>
 	Photos</h2>
 <p>

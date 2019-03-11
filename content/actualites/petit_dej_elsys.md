@@ -3,11 +3,11 @@ title = "Petit-Déjeuner ft. Elsys Design"
 dater = "21 Mars 2016"
 author = "7Robot"
 weight = 22
-image = "/img/articles/Sans titre.png"
+image = "/clubs/robot/img/articles/Sans titre.png"
 +++
 
 <p>
-	<img src="/img/articles/Sans titre.png" /></p>
+	<img src="/clubs/robot/img/articles/Sans titre.png" /></p>
 <p>
 	Aujourd&#39;hui au Foyer de l&#39;ENSEEIHT a eu lieu un petit-d&eacute;jeuner des plus classes !</p>
 <p>

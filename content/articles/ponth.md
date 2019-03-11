@@ -47,13 +47,13 @@ author = "Jeremie"
 <h2>
 	Sch&eacute;ma &eacute;lectrique</h2>
 <p>
-	<a href="/img/articles/schema_ponth.png"><img src="/img/articles/schema_ponth_mini.png" /></a></p>
+	<a href="/clubs/robot/img/articles/schema_ponth.png"><img src="/clubs/robot/img/articles/schema_ponth_mini.png" /></a></p>
 <h2>
 	Layout</h2>
 <p>
-	<img src="/img/articles/im2.png" /></p>
+	<img src="/clubs/robot/img/articles/im2.png" /></p>
 <h2>
-	<img src="/img/articles/im1.png" /></h2>
+	<img src="/clubs/robot/img/articles/im1.png" /></h2>
 <h2>
 	Les fichiers sources (T&eacute;l&eacute;chargeable)(TODO)</h2>
 <ol type="disc">
@@ -67,7 +67,7 @@ author = "Jeremie"
 <h2>
 	Datasheet du L298</h2>
 <p>
-	<a href="//www.datasheetcatalog.org/datasheet2/2/052daje928cw7pc0uqs1ipyryppy.pdf')"><img src="/img/articles/pdf_logo.png" /></a></p>
+	<a href="//www.datasheetcatalog.org/datasheet2/2/052daje928cw7pc0uqs1ipyryppy.pdf')"><img src="/clubs/robot/img/articles/pdf_logo.png" /></a></p>
 <h2>
 	Photos (TODO)</h2>
 <p>

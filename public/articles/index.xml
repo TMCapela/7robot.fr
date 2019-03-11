@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on 7Robot</title>
+    <link>https://www.bde.enseeiht.fr/clubs/robot/articles/</link>
+    <description>Recent content in Articles on 7Robot</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    
+	<atom:link href="https://www.bde.enseeiht.fr/clubs/robot/articles/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title> FriendlyARM Mini6410</title>
+      <link>https://www.bde.enseeiht.fr/clubs/robot/articles/friendlyarm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bde.enseeiht.fr/clubs/robot/articles/friendlyarm/</guid>
+      <description>1. Overview  La FriendlyARM Mini6410, commun&amp;eacute;ment appel&amp;eacute; la &amp;laquo; carte ARM &amp;raquo;, est en r&amp;eacute;alit&amp;eacute; un v&amp;eacute;ritable ordinateur miniaturis&amp;eacute;. Fabriqu&amp;eacute; par FriendlyARM, elle poss&amp;egrave;de des dimensions r&amp;eacute;duites (11cm &amp;times; 11cm) id&amp;eacute;ales pour la placer dans notre robot. De plus, en tant qu&amp;#39;ordinateur, il est possible d&amp;#39;installer un syst&amp;egrave;me d&amp;#39;exploitation tel que linux et ainsi b&amp;eacute;nificier des outils bien commodes qu&amp;#39;il embarque. Par exemple, il est alors possible de s&amp;#39;y connecter &amp;agrave; distance en ssh par un c&amp;acirc;ble ethernet ou un dongle wifi, et ainsi surveiller nos programme, g&amp;eacute;n&amp;eacute;rer des logs, commander manuellement le robot, &amp;hellip; Cela ouvre &amp;eacute;galement la possibilit&amp;eacute; d&amp;#39;utilis&amp;eacute; des biblioth&amp;egrave;ques pr&amp;eacute;-existante, et ainsi b&amp;eacute;nificier de fonctions avanc&amp;eacute;es telles que la reconnaissance d&amp;#39;image &amp;agrave; partir d&amp;#39;une webcam.</description>
+    </item>
+    
+    <item>
+      <title>A la découverte du Bus CAN</title>
+      <link>https://www.bde.enseeiht.fr/clubs/robot/articles/bus_can/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bde.enseeiht.fr/clubs/robot/articles/bus_can/</guid>
+      <description>I - Introduction  Le bus CAN (Control Area Network) est un bus de communication s&amp;eacute;rie, principalement con&amp;ccedil;u pour mettre en reseau diverses cartes &amp;eacute;l&amp;eacute;ctroniques.
+Il est utilis&amp;eacute; dans l&amp;rsquo;automobile pour faire dialoguer les divers systemes de contr&amp;ocirc;le ou de commande : ABS, systeme de freinage, de supenssion etc...
+   1.1-Comment imaginer une conversation CAN ?  Pour imager le protocole CAN on peut faire l&amp;#39;analogie avec une discution que vous avez entre amis.</description>
+    </item>
+    
+    <item>
+      <title>Autres fonctionalités de Qt (avancé)</title>
+      <link>https://www.bde.enseeiht.fr/clubs/robot/articles/fonctionalites_qt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bde.enseeiht.fr/clubs/robot/articles/fonctionalites_qt/</guid>
+      <description>Intro  De nombreuse librairies externes permettent d&amp;#39;etendre les fonctionalit&amp;eacute;s de Qt . Nous porterons notres attention sur ces 2 librairies :
+ Qextserialport : permet de g&amp;eacute;rer une liaison rs232 sous Qt  Qwt : permet de r&amp;eacute;alis&amp;eacute; des trac&amp;eacute;s de courbes   Rq :  Ces 2 librairies sont compatibles linux et windows , nous allons expliquer leur utilisation sous un systeme linux .
+ Qextserialport pour la gestion rs232  Qextserialport permet de configurer la liaison :</description>
+    </item>
+    
+    <item>
+      <title>Carte de développement PIC18F2550</title>
+      <link>https://www.bde.enseeiht.fr/clubs/robot/articles/carte_pic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bde.enseeiht.fr/clubs/robot/articles/carte_pic/</guid>
+      <description>Principe Voici deux cartes (une P-DIP et une CMS) qui ont pour but de fournir un support pour les d&amp;eacute;veloppements de projet PIC. Ces cartes sont volontairement minimalistes pour un usage le plus g&amp;eacute;n&amp;eacute;ral possible. On y trouve :
+ un r&amp;eacute;gulateur 7805 pour fournir 5V &amp;agrave; la carte  une LED de mise sous tension  les ports E/S  le port d&amp;eacute;di&amp;eacute; &amp;agrave; la programmation in-circuit  un bouton de reset  une led et bouton pousoir pour r&amp;eacute;aliser des tests sommaires   &amp;nbsp;</description>
+    </item>
+    
+    <item>
+      <title>Communication sans fil avec Xbee</title>
+      <link>https://www.bde.enseeiht.fr/clubs/robot/articles/xbee/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bde.enseeiht.fr/clubs/robot/articles/xbee/</guid>
+      <description>Intro  Les modules XBee permettent d&amp;#39;&amp;eacute;tablir une liaison RS232 sans fils .
+ Avantages : prix ; simplicit&amp;eacute; de mise en oeuvre ; fiabilit&amp;eacute; ; port&amp;eacute;e
+ Inconv&amp;eacute;nients : pas un emp&amp;acirc;tement de type labdec ; alim 3.3V
+ Nous allons d&amp;eacute;crire les &amp;eacute;tapes qui nous ont permis de comprendre et de faire fonctionner cette liaison sans fil .
+  Le mat&amp;eacute;riel utilis&amp;eacute;  - &amp;Agrave; gauche un des&amp;nbsp;deux XBee pro ;  - &amp;Agrave; droite l&amp;#39;XBee explorer (de SparkFun), qui est un adaptateur USB/XBee ;</description>
+    </item>
+    
+    <item>
+      <title>Convertisseurs CAN↔UART</title>
+      <link>https://www.bde.enseeiht.fr/clubs/robot/articles/convertisseurs_can_uart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bde.enseeiht.fr/clubs/robot/articles/convertisseurs_can_uart/</guid>
+      <description>Protocole CAN :
+ 11 bits d&amp;#39;identifiant
+ 0 &amp;agrave; 8 octets de donn&amp;eacute;e
+ &amp;nbsp;
+ Protocole UART :
+ [ FD ] [ size | 0 | id10..8 ] [ id7..0] [ M1 ] [ M2] &amp;hellip; [ M8 ] [ BF ]
+ &amp;nbsp;
+ (FD = 11111101)
+ (BF = 10111111)
+ &amp;nbsp;
+ &amp;nbsp;</description>
+    </item>
+    
+    <item>
+      <title>Fabrication d&#39;une alimentation stabilisée à partir d&#39;une alim de PC</title>
+      <link>https://www.bde.enseeiht.fr/clubs/robot/articles/alim_pc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bde.enseeiht.fr/clubs/robot/articles/alim_pc/</guid>
+      <description>L&amp;#39;objet de cet article est la fabrication d&amp;#39;une alimentation stabilis&amp;eacute;e de labo &amp;agrave; partir d&amp;#39;une alimentation de PC. Elle pourra fournir des tensions de -12V, 3.3V, 5V et 12V.
+ On commence par d&amp;eacute;monter le bloc d&amp;#39;alimentaion&amp;nbsp;de fa&amp;ccedil;on a avoir une vision de l&amp;#39;ensemble des fils. Attention &amp;agrave; toujours tout d&amp;eacute;brancher, vous travaillez avec du 220V !
+ On identifie ensuite les fils qu&amp;#39;il nous faut gr&amp;acirc;ce aux diagrammes suivant, en fonction du type de votre alim.</description>
+    </item>
+    
+    <item>
+      <title>I²C (1/3) : Introduction</title>
+      <link>https://www.bde.enseeiht.fr/clubs/robot/articles/i2c_1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bde.enseeiht.fr/clubs/robot/articles/i2c_1/</guid>
+      <description>Introduction
+  Le protocole I&amp;sup2;C  Les bases minimales  Trop de r&amp;egrave;gles ?  Les cas possibles   1. Le protocole Intergrated-to-Integrated-Circuit  Nous n&amp;rsquo;entrerons pas dans les d&amp;eacute;tails du fonctionnement de l&amp;rsquo;I2C, en effet il s&amp;rsquo;agit d&amp;rsquo;un standart pouvant &amp;ecirc;tre g&amp;eacute;r&amp;eacute; mat&amp;eacute;riellement par les p&amp;eacute;riph&amp;eacute;riques. Cette gestion mat&amp;eacute;rielle est confortable pour l&amp;rsquo;utilisateur qui peut mettre en oeuvre le protocole avec des connaissances minimales : c&amp;rsquo;est notre cas.</description>
+    </item>
+    
+    <item>
+      <title>I²C (1/3) : Introduction</title>
+      <link>https://www.bde.enseeiht.fr/clubs/robot/articles/i2c_2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bde.enseeiht.fr/clubs/robot/articles/i2c_2/</guid>
+      <description>Sommaire
+  Cablage de la ligne  Sch&amp;eacute;ma d&amp;#39;une trame I&amp;sup2;C   C&amp;acirc;blage de la ligne  D&amp;#39;un point de vue &amp;eacute;lectrique, une ligne IC ressemble &amp;agrave; ceci :
+Il appara&amp;icirc;t qu&amp;#39;un troisi&amp;egrave;me fil est n&amp;eacute;c&amp;eacute;ssaire au montage : la r&amp;eacute;f&amp;eacute;rence commune du potentiel &amp;eacute;lectrique (GND). On remarque aussi la pr&amp;eacute;sence de deux r&amp;eacute;sistances pull-ups qui fixent le niveau de la ligne au repos &amp;agrave; +Vcc. Ainsi, pour communiquer, un p&amp;eacute;riph&amp;eacute;rique n&amp;#39;aura qu&amp;#39;&amp;agrave; court-curcuiter la ligne pour la ramener au niveau logique 0.</description>
+    </item>
+    
+    <item>
+      <title>Les servomoteurs AX-12 avec un Arduino</title>
+      <link>https://www.bde.enseeiht.fr/clubs/robot/articles/ax-12_arduino/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bde.enseeiht.fr/clubs/robot/articles/ax-12_arduino/</guid>
+      <description>Dans le top des servomoteurs, l&amp;#39;AX-12 tient une bonne place. Il est fabriqu&amp;eacute; en Cor&amp;eacute;e par Robotis, vendu $45, et vous fera gagner un temps &amp;eacute;norme. On le contr&amp;ocirc;le avec un bus s&amp;eacute;rie, de type RS-485 &amp;agrave; trois fils, et un syst&amp;egrave;me d&amp;#39;adresses. Voici comment utiliser vos AX-12 (et peut-&amp;ecirc;tre d&amp;#39;autres produits Dynamixel) simplement avec un Arduino.
+  Datasheet :
+ AX-12A.pdf
+ Biblioth&amp;egrave;que&amp;nbsp;&amp;agrave; mettre dans un dossier&amp;nbsp;libraries&amp;nbsp;dans votre Sketchbook&amp;nbsp;:</description>
+    </item>
+    
+    <item>
+      <title>Librairie C18 pour servomoteurs standards et PIC18F</title>
+      <link>https://www.bde.enseeiht.fr/clubs/robot/articles/librairie_servo_pic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bde.enseeiht.fr/clubs/robot/articles/librairie_servo_pic/</guid>
+      <description>La librairie C18 que nous vous proposons est courte (une centaine de lignes), mais simplifie l&amp;#39;utilisation de servomoteurs sur les PIC18F. Nous l&amp;#39;avons principalement test&amp;eacute;e sur le 2550.
+ Rappels sur les servomoteurs  Ce sont des boitiers con&amp;ccedil;us pour le mod&amp;eacute;lisme qui contiennent un moteur continu, un r&amp;eacute;ducteur, et de l&amp;#39;&amp;eacute;lectronique de commande. Il sont souvent limit&amp;eacute;s &amp;agrave; 180&amp;deg; de d&amp;eacute;battement (certains plus, certains moins). On les commande en position, contrairement aux moteurs continus qui se commandent en vitesse.</description>
+    </item>
+    
+    <item>
+      <title>Ponts en H</title>
+      <link>https://www.bde.enseeiht.fr/clubs/robot/articles/ponth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bde.enseeiht.fr/clubs/robot/articles/ponth/</guid>
+      <description>Principe  Cette carte r&amp;eacute;alise l&amp;#39;interface de puissance pour&amp;nbsp; contr&amp;ocirc;ler jusqu&amp;#39;&amp;agrave; 2 moteurs CC ou 1 moteur pas &amp;agrave; pas
+On peut r&amp;eacute;gler le sens de rotation (2 ponts en H) et la vitesse du moteur en faisant varier le rapport cyclique sur les entr&amp;eacute;es EN .
+La carte fonctionne avec une tension d&amp;#39;alimentation de +12v et jusqu&amp;#39;a des courants de 3A
+La carte se d&amp;eacute;compose suivant :
+ 1 bornier d&amp;#39;alimentation +12V  [ intA1/intA2] : sens moteur A  [ EnbA] : PwmA  [ SensA] : tension image du courant A  [ intA1/intA2] : sens moteur A  [ EnbA] : PwmA  [ SensA] : tension image du courant A  2 borniers sortie moteur A/B   &amp;nbsp;</description>
+    </item>
+    
+    <item>
+      <title>Qt et la Robotique (Intro)</title>
+      <link>https://www.bde.enseeiht.fr/clubs/robot/articles/qt_et_la_robotique/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bde.enseeiht.fr/clubs/robot/articles/qt_et_la_robotique/</guid>
+      <description>Intro  Il peut etre utile de concevoir des interfaces utilisateur, pour pouvoir debuger facilement, prendre controle du robot et afficher des informations (position, niveau de baterrie, messages d&amp;#39;erreurs &amp;hellip;).
+ Nous allons voir quels sont les possibilit&amp;eacute;s que nous offre Qt et le C++ pour cr&amp;eacute;er des interfaces de debug .
+ Principe de Qt  Qt est une bilioth&amp;egrave;que qui permet de creer des fenetres et de g&amp;eacute;rer les actions (ex: appui sur un bouton) .</description>
+    </item>
+    
+    <item>
+      <title>Utilisation du port série</title>
+      <link>https://www.bde.enseeiht.fr/clubs/robot/articles/port_serie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bde.enseeiht.fr/clubs/robot/articles/port_serie/</guid>
+      <description>Pr&amp;eacute;sentation  Le port s&amp;eacute;rie commun&amp;eacute;ment appell&amp;eacute; liaison RS232 est une valeur sure en robotique amateur malgr&amp;egrave;sson &amp;acirc;ge. Il offre des supports de communication robustes et simples &amp;agrave; mettre en oeuvre.
+ Etant donn&amp;eacute; que ce bus est &amp;quot;s&amp;eacute;rie&amp;quot;, les informations sont envoy&amp;eacute;es bit &amp;agrave; bit, &amp;quot;&amp;agrave; la chaine&amp;quot; (on parle de trames), contrairement au port parall&amp;egrave;le. Il en r&amp;eacute;sulte un d&amp;eacute;bit moins important mais n&amp;eacute;anmoins suffisant pour nos applications.</description>
+    </item>
+    
+  </channel>
+</rss>

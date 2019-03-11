@@ -3,11 +3,11 @@ title = "Coupe ArcelorMittal"
 dater = "14 Mai 2011"
 author = "Romain"
 weight = 2
-image = "/img/articles/DSCN1119.JPG"
+image = "/clubs/robot/img/articles/DSCN1119.JPG"
 +++
 
 <p align="justify">
-	<a href="/img/articles/DSCN1119.JPG"><img src="/img/articles/DSCN1119.JPG" style="float:right;margin:15px" width="300"/></a>Cette coupe est organis&eacute;e tous les ans par le groupe de sid&eacute;rurgie <a href="http://www.arcelormittal.com/">ArcelorMittal</a> dans son centre de recherche &agrave; Maizi&egrave;res.</p>
+	<a href="/clubs/robot/img/articles/DSCN1119.JPG"><img src="/clubs/robot/img/articles/DSCN1119.JPG" style="float:right;margin:15px" width="300"/></a>Cette coupe est organis&eacute;e tous les ans par le groupe de sid&eacute;rurgie <a href="http://www.arcelormittal.com/">ArcelorMittal</a> dans son centre de recherche &agrave; Maizi&egrave;res.</p>
 <p align="justify">
 	D&#39;un c&ocirc;t&eacute;, la promotion de l&#39;entreprise aupr&egrave;s des &eacute;tudiants est assur&eacute;e, et de l&#39;autre nous pouvons nous entra&icirc;ner pour la&nbsp; coupe de France de robotique &nbsp;dans des conditions r&eacute;elles. En effet, cet &eacute;v&egrave;nement ayant lieu avant la coupe officielle, il permet aux &eacute;quipes de peaufiner les dernier r&eacute;glages ou de s&eacute;rieusement s&#39;y mettre avant le grand show !</p>
 <!--BREAK-->

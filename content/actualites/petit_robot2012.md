@@ -3,7 +3,7 @@ title = "Le petit robot est né"
 dater = "15 Décembre 2011"
 author = "Maxime"
 weight = 9
-image = "/img/articles/petitRobot12.png"
+image = "/clubs/robot/img/articles/petitRobot12.png"
 +++
 
 <p>
@@ -23,6 +23,6 @@ image = "/img/articles/petitRobot12.png"
 		&nbsp;</div>
 </div>
 <p>
-	<a href="/img/articles/petitRobot12.png"><img src="/img/articles/petitRobot12.png" style="float:right" width="300"/></a></p>
+	<a href="/clubs/robot/img/articles/petitRobot12.png"><img src="/clubs/robot/img/articles/petitRobot12.png" style="float:right" width="300"/></a></p>
 <div>
-	<a href="/img/articles/petitRobot12-2.jpg"><img src="/img/articles/petitRobot12-2.jpg" style="float:left" width="300"/></a></div>
+	<a href="/clubs/robot/img/articles/petitRobot12-2.jpg"><img src="/clubs/robot/img/articles/petitRobot12-2.jpg" style="float:left" width="300"/></a></div>

@@ -11,7 +11,7 @@ author = "Jeremie"
 <p>
 	Nous allons voir quels sont les possibilit&eacute;s que nous offre <strong>Qt</strong> et le <strong>C++</strong> pour cr&eacute;er des interfaces de debug .</p>
 <p align="center">
-	<img src="/img/articles/Qt_small.png" /></p>
+	<img src="/clubs/robot/img/articles/Qt_small.png" /></p>
 <h2>
 	Principe de Qt</h2>
 <p>
@@ -37,7 +37,7 @@ author = "Jeremie"
 <p>
 	&nbsp;</p>
 <p>
-	.<img src="/img/articles/int_action.png" /></p>
+	.<img src="/clubs/robot/img/articles/int_action.png" /></p>
 <p>
 	On y trouve :</p>
 <ul>
@@ -55,7 +55,7 @@ author = "Jeremie"
 <p>
 	Voici les principaux widgets qui peuvent servir pour afficher des informations sur le robot&nbsp; :</p>
 <p>
-	<img src="/img/articles/int_aff.png" /></p>
+	<img src="/clubs/robot/img/articles/int_aff.png" /></p>
 <p>
 	On y trouve :</p>
 <ol type="disc">
@@ -73,9 +73,9 @@ author = "Jeremie"
 <p>
 	Et oui Qt dispose aussi d&#39; une biblioth&egrave;que graphique qui permet de dessiner et faire mouvoir vos dessins !!</p>
 <p>
-	<img src="/img/articles/simu1.png" /></p>
+	<img src="/clubs/robot/img/articles/simu1.png" /></p>
 <h3>
-	<em><a href="/img/articles/simu_video.mpeg">Voir la video de demo</a></em></h3>
+	<em><a href="/clubs/robot/img/articles/simu_video.mpeg">Voir la video de demo</a></em></h3>
 <h3>
 	Rq:</h3>
 <p>
