@@ -1,5 +1,5 @@
 +++
-title = "Découpe Laser des robots pour la CDF 2019"
+title = "Découpe Laser des robots : CDF 2019"
 dater = "20 Février 2019"
 author = "Tony"
 weight = 109
